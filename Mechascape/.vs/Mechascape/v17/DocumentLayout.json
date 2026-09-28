@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\",
+  "WorkspaceRootPath": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\onedrive\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\weapons\\weaponswitching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponswitching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwB8AAAAmAAAAAAAAAA==",
+              "Title": "WeaponSwitching.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-27T03:25:50.959Z",
+              "WhenOpened": "2026-09-28T13:23:18.167Z",
               "EditorCaption": ""
             }
           ]
