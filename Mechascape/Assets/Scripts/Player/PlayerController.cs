@@ -1,7 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
@@ -39,7 +38,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        DashLockState();
+        if (isDashing == true)
+        {
+            return;
+        }
+
+        Debug.Log(rb.linearVelocity);
 
         Inputs();
         FlipSprite();
@@ -48,7 +52,10 @@ public class PlayerController : MonoBehaviour
     //----- HANDLE ALL THE PHYSICS MOVEMENT -----//
     private void FixedUpdate()
     {
-        DashLockState();
+        if (isDashing == true)
+        {
+            return;
+        }
 
         // Move Player
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
@@ -107,16 +114,6 @@ public class PlayerController : MonoBehaviour
 
     #region DASHING CONTROL
 
-    // Prevent player from moving and jumping while dashing
-    // we will us a Function call to make this simpler
-    void DashLockState()
-    {
-        if (isDashing == true)
-        {
-            return;
-        }
-    }
-
     // Coroutine that manages all of our Dashing control
     private IEnumerator Dash()
     {
@@ -126,7 +123,7 @@ public class PlayerController : MonoBehaviour
         // Store Orginal Gravity
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.linearVelocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        rb.linearVelocity = new Vector2(moveX * dashingPower, 0f);
 
         tr.emitting = true;
 
