@@ -24,8 +24,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     [SerializeField] Transform groundCheck;
 
+    [SerializeField] private HealthSystem health;
+
     float moveX;
-    bool isFacingRight = false;
+    public bool isFacingRight = false;
 
     private Rigidbody2D rb;
     [SerializeField] TrailRenderer tr;
@@ -43,7 +45,8 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        Debug.Log(rb.linearVelocity);
+        if (Input.GetKeyDown(KeyCode.E))
+            health.TakeDamage(10f);
 
         Inputs();
         FlipSprite();
