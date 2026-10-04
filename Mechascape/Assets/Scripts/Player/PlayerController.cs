@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
     #region PLAYER CONTROLS
 
+    // Player Inputs Function
     void Inputs()
     {
         // Get X axis inputs
@@ -123,7 +124,10 @@ public class PlayerController : MonoBehaviour
         // Store Orginal Gravity
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.linearVelocity = new Vector2(moveX * dashingPower, 0f);
+
+        float dashingDirection = moveX;
+
+        rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
 
         tr.emitting = true;
 
