@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     [SerializeField] TrailRenderer tr;
+    [SerializeField] private SpriteRenderer sR;
     
 
     private void Awake()

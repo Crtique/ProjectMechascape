@@ -458,6 +458,7 @@ MonoBehaviour:
   health: {fileID: 640821677}
   isFacingRight: 0
   tr: {fileID: 640821676}
+  sR: {fileID: 640821671}
 --- !u!96 &640821676
 TrailRenderer:
   serializedVersion: 3

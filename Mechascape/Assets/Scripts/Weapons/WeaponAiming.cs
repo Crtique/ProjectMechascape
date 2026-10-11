@@ -20,12 +20,12 @@ public class WeaponAiming : MonoBehaviour
 
         // return a rotation around the Z axis
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
-        FixWeaponFlip(rotZ);
+        //FixWeaponFlip(rotZ);
 
 
     }
 
-    void FixWeaponFlip(float angle)
+    /*void FixWeaponFlip(float angle)
     {
         // If aiming to the left, flip the gun vertically
         if (angle > 90 || angle < -90)
@@ -37,5 +37,5 @@ public class WeaponAiming : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-    }
+    }*/
 }
