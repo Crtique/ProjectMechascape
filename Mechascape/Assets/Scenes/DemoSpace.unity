@@ -446,17 +446,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feac48e56c7a4814a9ba41feeaa6e717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 15
   jumpHeight: 12
+  fallSpeed: 50
+  groundSlamDamage: 10
+  isGroundSlamming: 0
   dashingPower: 25
-  canDash: 1
-  isDashing: 0
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   groundCheck: {fileID: 1053290119}
   health: {fileID: 640821677}
-  isFacingRight: 0
   tr: {fileID: 640821676}
 --- !u!96 &640821676
 TrailRenderer:
