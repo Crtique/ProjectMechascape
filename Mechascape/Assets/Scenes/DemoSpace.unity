@@ -642,6 +642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parryCollider: {fileID: 1505097412}
   parryWindowTime: 0.12
+  parryingWindowCooldown: 1
+  isParrying: 0
 --- !u!1 &719232263
 GameObject:
   m_ObjectHideFlags: 0
