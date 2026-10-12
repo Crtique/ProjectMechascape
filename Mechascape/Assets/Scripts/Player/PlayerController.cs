@@ -162,7 +162,10 @@ public class PlayerController : MonoBehaviour
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
 
-        float dashingDirection = moveX;
+        // We check whether out MoveX value is zero or not. If MoveX isn't zero then the player has pressed either A or D
+        // Yet when MoveX is zero the player is no longer providing input to the system. Yet we check if we are facing right or not and use those values for our MoveX
+        // We will dash based on what our MoveX value becomes from our isFacingRight Boolean Variable
+        float dashingDirection = moveX != 0 ? moveX:(isFacingRight ? 1f:-1f);
 
         rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
 
