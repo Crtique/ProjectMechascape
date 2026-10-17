@@ -43,9 +43,10 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private bool isFacingRight = false;
 
-    // --- Objects On player
+    // --- Objects On player --- //
     private Rigidbody2D rb;
     [SerializeField] private TrailRenderer tr;
+    [SerializeField] private SpriteRenderer playerSprite;
     
 
     private void Awake()
@@ -137,15 +138,14 @@ public class PlayerController : MonoBehaviour
     //----- FLIP THE DIRECTION OF THE SPRITE BASED ON WHERE IT IS LOOKING -----//
     void FlipSprite()
     {
-        if (isFacingRight && moveX < 0f || !isFacingRight && moveX > 0f)
-        {
-            isFacingRight = !isFacingRight;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // Store our localscale
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
-        }
+        if (mousePos.x > transform.position.x)
+            isFacingRight = true;
+        else
+            isFacingRight = false;
+
+        playerSprite.flipX = !isFacingRight;
     }
 
     #endregion
