@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer playerSprite;
-    
+    [SerializeField] private WeaponKnockback wkb;
+
 
     private void Awake()
     {
@@ -72,9 +73,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         if (isDashing == true)
-        {
             return;
-        }
+
+        // Affect player with knockback without canceling the normal movement instantly
+        if (wkb != null && wkb.IsKnockedBack)
+            return;
 
         // Move Player
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
@@ -106,12 +109,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
-        }
-
-        // If still holding space key jump higher
-        else if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
         #endregion 
 
