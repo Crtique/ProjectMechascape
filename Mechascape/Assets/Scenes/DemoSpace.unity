@@ -635,6 +635,7 @@ GameObject:
   - component: {fileID: 959320731}
   - component: {fileID: 959320730}
   - component: {fileID: 959320729}
+  - component: {fileID: 959320732}
   m_Layer: 3
   m_Name: BreakableWorld
   m_TagString: Untagged
@@ -758,6 +759,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959320732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959320728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d28573b41125e540b7be4a716851495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 1645087041}
 --- !u!1 &1177661681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1171,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 729212345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645087041 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1485925464705405893, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+  m_PrefabInstance: {fileID: 3961419278497658558}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feac48e56c7a4814a9ba41feeaa6e717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702718468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: tr
+      value: 
+      objectReference: {fileID: 1070666636943757053, guid: b190eff4032582c4593b6b2650255d64, type: 3}
     - target: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_Name
       value: Player

@@ -205,7 +205,7 @@ public class PlayerController : MonoBehaviour
         canGroundSlam = true;
     }
 
-    void GroundSlammingDamage(float damage)
+    public void GroundSlammingDamage(float damage)
     {
         Debug.Log($"GROUND HIT!!! DAMAGE: {damage}");
     }
