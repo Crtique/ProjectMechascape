@@ -303,6 +303,7 @@ MonoBehaviour:
   shootPoint: {fileID: 8472718645907600765}
   bullet: {fileID: 3369974331148047224, guid: b190eff4032582c4593b6b2650255d64, type: 3}
   bulletSpeed: 1200
+  tr: {fileID: 1070666636943757053, guid: b190eff4032582c4593b6b2650255d64, type: 3}
 --- !u!1 &8498734755136646993
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +628,7 @@ MonoBehaviour:
   fallSpeed: 50
   groundSlamDamage: 10
   isGroundSlamming: 0
-  dashingPower: 25
+  dashingPower: 40
   groundMask:
     serializedVersion: 2
     m_Bits: 8
