@@ -43,10 +43,12 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private bool isFacingRight = false;
 
-    // --- Objects On player
+    // --- Objects On player --- //
     private Rigidbody2D rb;
     [SerializeField] private TrailRenderer tr;
-    
+    [SerializeField] private SpriteRenderer playerSprite;
+    [SerializeField] private WeaponKnockback wkb;
+
 
     private void Awake()
     {
@@ -71,9 +73,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         if (isDashing == true)
-        {
             return;
-        }
+
+        // Affect player with knockback without canceling the normal movement instantly
+        if (wkb != null && wkb.IsKnockedBack)
+            return;
 
         // Move Player
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
@@ -106,12 +110,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
         }
-
-        // If still holding space key jump higher
-        else if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
-        }
         #endregion 
 
         #region GROUNDSLAMMING INPUTS
@@ -137,15 +135,14 @@ public class PlayerController : MonoBehaviour
     //----- FLIP THE DIRECTION OF THE SPRITE BASED ON WHERE IT IS LOOKING -----//
     void FlipSprite()
     {
-        if (isFacingRight && moveX < 0f || !isFacingRight && moveX > 0f)
-        {
-            isFacingRight = !isFacingRight;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // Store our localscale
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
-        }
+        if (mousePos.x > transform.position.x)
+            isFacingRight = true;
+        else
+            isFacingRight = false;
+
+        playerSprite.flipX = !isFacingRight;
     }
 
     #endregion
@@ -208,7 +205,7 @@ public class PlayerController : MonoBehaviour
         canGroundSlam = true;
     }
 
-    void GroundSlammingDamage(float damage)
+    public void GroundSlammingDamage(float damage)
     {
         Debug.Log($"GROUND HIT!!! DAMAGE: {damage}");
     }

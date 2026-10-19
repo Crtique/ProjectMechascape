@@ -1,29 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\",
+  "WorkspaceRootPath": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\onedrive\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\breakableworldobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\breakableworldobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\playerparryingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\pistolshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\pistolshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\weaponknockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponknockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\playerparryingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerparryingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\parryhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\parryhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\weaponaiming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\weaponaiming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponaiming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\weaponswitching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\parryhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\parryhitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\weapons\\weaponswitching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponswitching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\assets\\scripts\\player\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,19 +46,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BreakableWorldObjects.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\BreakableWorldObjects.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BreakableWorldObjects.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\BreakableWorldObjects.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BreakableWorldObjects.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T21:43:06.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PistolShooting.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T19:24:05.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeaponKnockback.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponKnockback.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponKnockback.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponKnockback.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponKnockback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T19:20:21.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ParryHitBox.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\ParryHitBox.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\ParryHitBox.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,11 +101,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "HealthSystem.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\HealthSystem.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\HealthSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HealthSystem.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\HealthSystem.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\HealthSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\HealthSystem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -66,48 +113,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WeaponAiming.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponAiming.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponAiming.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponAiming.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponAiming.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponAiming.cs",
               "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponAiming.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowBIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-04T05:19:29.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerParryingController.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerParryingController.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerParryingController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerParryingController.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerParryingController.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerParryingController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerParryingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-11T20:05:33.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAwwKEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAQwM8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T16:44:00.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "WeaponSwitching.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
+              "ToolTip": "C:\\Users\\je4vo\\OneDrive\\Documents\\Github\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
               "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponSwitching.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
