@@ -1,11 +1,20 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.0/staging' branch; Version is '6000.0.84f1 (78ab6fc243d5) revision 7908207'; Using compiler version '193933523'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 31861 MB
+=======
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 15150 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lenha" at "2026-10-18T00:26:48.6391087Z"
+>>>>>>> Stashed changes
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-je4vo" at "2026-10-19T22:32:26.048358Z"
 System  architecture: x64
 Process architecture: x64
+<<<<<<< Updated upstream
 Date: 2026-10-19T22:32:26Z
+=======
+Date: 2026-10-18T00:26:48Z
+>>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.0.84f1\Editor\Unity.exe
@@ -19,9 +28,15 @@ C:/Users/je4vo/Documents/GitHub/ProjectMechascape/Mechascape
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 54513
 -parentPid
 14744
+=======
+52773
+-parentPid
+14284
+>>>>>>> Stashed changes
 -analyticsCloudUserId
 2474196722649
 -analyticsCloudProjectId
@@ -82,16 +97,39 @@ C:/Users/je4vo/Documents/GitHub/ProjectMechascape/Mechascape
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [14488]  Target information:
 
 Player connection [14488]  * "[IP] 10.80.214.186 [Port] 0 [Flags] 2 [Guid] 3527572364 [EditorId] 3527572364 [Version] 1048832 [Id] WindowsEditor(7,CJ-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [14488] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [14488] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [9260]  Target information:
+
+Player connection [9260]  * "[IP] 10.80.22.77 [Port] 0 [Flags] 2 [Guid] 2321680901 [EditorId] 2321680901 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KJOJBRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [9260] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9260] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
+<<<<<<< Updated upstream
+=======
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15748, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              fa8a8146750d4c2bb3f55d4db73b12bd
+  Correlation Id:          dcfec4c9495fe9c931d62a1b04d2265b
+  External correlation Id: 4134031786678947048
+  Machine Id:              NcPaBq4QY4N/yvvO7CeKYDIs3Ok=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-lenha" (connect: 0.00s, validation: 0.00s, handshake: 0.08s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-lenha-notifications" at "2026-10-18T00:26:48.7253988Z"
+[Licensing::Module] Licensing Background thread has ended after 0.09s
+>>>>>>> Stashed changes
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -99,7 +137,11 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 3.72 ms, found 5 plugins.
+=======
+Refreshing native plugins compatible for Editor in 5.86 ms, found 5 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.84f1 (78ab6fc243d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/Resources/UnitySubsystems
@@ -115,12 +157,21 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.002769 seconds.
 - Loaded All Assemblies, in  0.300 seconds
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004766 seconds.
+- Loaded All Assemblies, in  0.697 seconds
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
@@ -144,14 +195,21 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.231 seconds
 Domain Reload Profiling: 528ms
 	BeginReloadAssembly (101ms)
+=======
+- Finished resetting the current domain, in  0.637 seconds
+Domain Reload Profiling: 1330ms
+	BeginReloadAssembly (234ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (42ms)
@@ -173,6 +231,29 @@ Domain Reload Profiling: 528ms
 			BeforeProcessingInitializeOnLoad (46ms)
 			ProcessInitializeOnLoadAttributes (106ms)
 			ProcessInitializeOnLoadMethodAttributes (34ms)
+=======
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (86ms)
+	LoadAllAssembliesAndSetupDomain (282ms)
+		LoadAssemblies (230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (276ms)
+			TypeCache.Refresh (274ms)
+				TypeCache.ScanAssembly (248ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (637ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (575ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (51ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (299ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -190,11 +271,19 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.705 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 Refreshing native plugins compatible for Editor in 2.17 ms, found 5 plugins.
+=======
+- Loaded All Assemblies, in  1.778 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 5.11 ms, found 5 plugins.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -206,6 +295,7 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 2.01 ms, found 5 plugins.
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.594 seconds
@@ -296,10 +386,71 @@ Received Import Request.
   path: Assets/Scenes/LevelSection4.unity
   artifactKey: Guid(ac91a194a1f531341962967d70be54c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/LevelSection4.unity using Guid(ac91a194a1f531341962967d70be54c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5a8116b9a2f77681c614b4e1d8cc15d') in 0.0005005 seconds
+=======
+Refreshing native plugins compatible for Editor in 3.60 ms, found 5 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.680 seconds
+Domain Reload Profiling: 3449ms
+	BeginReloadAssembly (403ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (1196ms)
+		LoadAssemblies (779ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (634ms)
+			TypeCache.Refresh (446ms)
+				TypeCache.ScanAssembly (419ms)
+			BuildScriptInfoCaches (157ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1680ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1378ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (302ms)
+			ProcessInitializeOnLoadAttributes (846ms)
+			ProcessInitializeOnLoadMethodAttributes (206ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 4.48 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Curl error 3: URL rejected: Malformed input to a URL function
+Unloading 7604 unused Assets / (5.4 MB). Loaded Objects now: 8306.
+Memory consumption went from 153.1 MB to 147.7 MB.
+Total: 22.256500 ms (FindLiveObjects: 1.956100 ms CreateObjectMapping: 2.259100 ms MarkObjects: 12.393900 ms  DeleteObjects: 5.645700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 306102.226621 seconds.
+  path: Assets/Scenes/LevelSection4.unity
+  artifactKey: Guid(ac91a194a1f531341962967d70be54c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LevelSection4.unity using Guid(ac91a194a1f531341962967d70be54c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49f1b70f56b144774976349451be2256') in 0.0096801 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
+  Time since last request: 682.388552 seconds.
+  path: Assets/Scenes/LevelSpace.unity
+  artifactKey: Guid(5564322a1de379c4cb5859578300b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LevelSpace.unity using Guid(5564322a1de379c4cb5859578300b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b0255385735837dc3cfd8992ea9dc09') in 0.0017502 seconds
+>>>>>>> Stashed changes
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.844391 seconds.
   path: Assets/Scenes/LevelSection5.unity
   artifactKey: Guid(047c78e541446bf468fc41a8dc699062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -3895,3 +4046,11 @@ Memory consumption went from 163.9 MB to 159.3 MB.
 Total: 8.564400 ms (FindLiveObjects: 0.847700 ms CreateObjectMapping: 0.482700 ms MarkObjects: 4.668100 ms  DeleteObjects: 2.565200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+  Time since last request: 1.040155 seconds.
+  path: Assets/Scenes/LevelSection5.unity
+  artifactKey: Guid(047c78e541446bf468fc41a8dc699062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LevelSection5.unity using Guid(047c78e541446bf468fc41a8dc699062) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45631ec2b59d16d1d590a174a0f991fe') in 0.0010611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+>>>>>>> Stashed changes
