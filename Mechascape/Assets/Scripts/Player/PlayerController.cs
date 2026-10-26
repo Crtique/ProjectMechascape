@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool hasDealtGroundSlamDamage = false;
 
     private float groundSlamTime = 0.2f;
-    private float groundSlamCoolDown = 1f;
+    private float groundSlamCoolDown = 0.1f;
 
 
     [Header("Dashing Seetings")]
