@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    // Camera and mouse variables
+    private Camera mainCamera;
+    private Vector3 mousePos;
+
+    // Camera offsets and timing variables
     private Vector3 offset = new Vector3(0, 0, -10f);
     private float smoothTime = 0.25f;
     private Vector3 velocity = Vector3.zero;
@@ -17,15 +22,15 @@ public class FollowPlayer : MonoBehaviour
 
     void Start()
     {
-        lastPlayerPosition = player.position;
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     void LateUpdate()
     {
-        // Get the direction the player is moving
-        Vector3 movement = player.position - lastPlayerPosition;
+        mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = player.position.z;
 
-        Vector3 direction = movement.normalized;
+        Vector3 direction = (mousePos - player.position).normalized;
 
         // Determine where the camera should look ahead
         Vector3 targetLookAhead = direction * lookAheadDistance;
