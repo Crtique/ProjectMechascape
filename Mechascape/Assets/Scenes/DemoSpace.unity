@@ -872,9 +872,9 @@ MonoBehaviour:
   Damping: {x: 1, y: 1, z: 1}
   Lookahead:
     Enabled: 1
-    Time: 0.37
-    Smoothing: 4.8
-    IgnoreY: 1
+    Time: 0.133
+    Smoothing: 1.7
+    IgnoreY: 0
 --- !u!1 &1321828278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1822,10 @@ PrefabInstance:
     - target: {fileID: 1469217293357180972, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485925464705405893, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: jumpHeight
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7860505530606999197, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_Mass
