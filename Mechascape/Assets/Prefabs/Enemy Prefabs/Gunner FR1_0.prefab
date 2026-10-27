@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2593199739038102771}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.37, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6693024599165324493}
   - component: {fileID: 6539007874407199221}
   - component: {fileID: 158569272218289883}
+  - component: {fileID: 5561254124100743391}
   m_Layer: 0
   m_Name: Gunner FR1_0
   m_TagString: Untagged
@@ -111,7 +112,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 14891973189551320, guid: 10a6870a9e9a38a45b6e214622ba7c0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.498, y: 3.962}
@@ -154,6 +155,24 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4999997, y: 0}
-  m_Size: {x: 1.4980005, y: 3.962}
+  m_Offset: {x: -0.5, y: 0}
+  m_Size: {x: 1.4980011, y: 3.962}
   m_Direction: 0
+--- !u!114 &5561254124100743391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926546890561143364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef5b6eaf6ff99748b9f1567a59e0343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 7198895274718065637}
+  bullet: {fileID: 2161056918013633729, guid: 0235a89bfc444394fac3bdaaf0527743, type: 3}
+  bulletSpeed: 2000
+  tr: {fileID: 1916393872402771524, guid: 0235a89bfc444394fac3bdaaf0527743, type: 3}
+  bulletDelay: 1
+  timeOfLastShot: 0
