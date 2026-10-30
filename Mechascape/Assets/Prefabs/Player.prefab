@@ -795,8 +795,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
-  jumpHeight: 12
-  fallSpeed: 50
+  jumpHeight: 18
+  fallSpeed: 100
   groundSlamDamage: 10
   isGroundSlamming: 0
   dashingPower: 40
