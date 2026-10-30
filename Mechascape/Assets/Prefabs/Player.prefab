@@ -796,6 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 15
   jumpHeight: 12
+  parryPivot: {fileID: 1476930408498857423}
   fallSpeed: 50
   groundSlamDamage: 10
   isGroundSlamming: 0

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Settings")]
     [SerializeField] private float moveSpeed; 
     [SerializeField] private float jumpHeight;
+    [SerializeField] private Transform parryPivot;
 
 
     [Header("GroundSlamming Control")]
@@ -143,6 +144,20 @@ public class PlayerController : MonoBehaviour
             isFacingRight = false;
 
         playerSprite.flipX = !isFacingRight;
+
+        // Flip Parry Collider
+        Vector3 scale = parryPivot.localScale;
+
+        if (isFacingRight)
+        {
+            scale.x = Mathf.Abs(scale.x);
+        }
+        else
+        {
+            scale.x = -Mathf.Abs(scale.x);
+        }
+
+        parryPivot.localScale = scale;
     }
 
     #endregion
