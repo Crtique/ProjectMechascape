@@ -1,34 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\",
+  "WorkspaceRootPath": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyDamage.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemy\\EnemyDamage.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\enemy\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyShooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemy\\EnemyShooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\ParryHitBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1060EF9E-CD7A-4EAC-7460-884BCD6C792D}|Assembly-CSharp-Editor.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\editor\\foveditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1060EF9E-CD7A-4EAC-7460-884BCD6C792D}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\scripts\\editor\\foveditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,91 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 221,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyDamage.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyDamage.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyDamage.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyDamage.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyDamage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T17:38:58.082Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RaycastEnemyShooting.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\RaycastEnemyShooting.cs",
+              "Title": "FOVEditor.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Editor\\FOVEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Editor\\FOVEditor.cs",
+              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Editor\\FOVEditor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Editor\\FOVEditor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAoAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T03:44:30.473Z"
+              "WhenOpened": "2026-10-31T18:09:40.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FieldOfView.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
+              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T02:01:25.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyShooting.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyShooting.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyShooting.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyShooting.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyShooting.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T01:55:55.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ParryHitBox.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\ParryHitBox.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\ParryHitBox.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\ParryHitBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T01:54:39.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BreakableWorldObjects.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WorldAssets\\BreakableWorldObjects.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T01:34:27.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DestroyableCrate.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs",
-              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WorldAssets\\DestroyableCrate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T01:32:57.042Z"
+              "WhenOpened": "2026-10-31T17:47:23.897Z",
+              "EditorCaption": ""
             }
           ]
         }

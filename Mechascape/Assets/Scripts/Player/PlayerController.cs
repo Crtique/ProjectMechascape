@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     // --- Objects On player --- //
     private Rigidbody2D rb;
+
+    [Header("Refrances")]
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private WeaponKnockback wkb;
