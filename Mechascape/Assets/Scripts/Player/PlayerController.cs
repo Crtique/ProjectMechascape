@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Settings")]
     [SerializeField] private float moveSpeed; 
     [SerializeField] private float jumpHeight;
+    [SerializeField] private Transform parryPivot;
 
 
     [Header("GroundSlamming Control")]
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     // --- Objects On player --- //
     private Rigidbody2D rb;
+
+    [Header("Refrances")]
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private WeaponKnockback wkb;
@@ -143,6 +146,20 @@ public class PlayerController : MonoBehaviour
             isFacingRight = false;
 
         playerSprite.flipX = !isFacingRight;
+
+        // Flip Parry Collider
+        Vector3 scale = parryPivot.localScale;
+
+        if (isFacingRight)
+        {
+            scale.x = Mathf.Abs(scale.x);
+        }
+        else
+        {
+            scale.x = -Mathf.Abs(scale.x);
+        }
+
+        parryPivot.localScale = scale;
     }
 
     #endregion

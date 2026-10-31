@@ -4,6 +4,7 @@ using UnityEngine;
 public class BreakableWorldObjects : MonoBehaviour
 {
     [SerializeField] private PlayerController pc;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Projectile
+  - Bullet
+  - Crate
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
@@ -12,8 +15,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Obstruction
   - 
   - 
   - 
