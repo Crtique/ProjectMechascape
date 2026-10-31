@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 1485925464705405893}
   - component: {fileID: 194287107154409453}
   - component: {fileID: 6528466659054191227}
+  - component: {fileID: 4742564396360317417}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -770,7 +771,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 34fa2597faa1f584280ee566428011ae, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -840,3 +841,16 @@ MonoBehaviour:
   parryWindowTime: 0.12
   parryingWindowCooldown: 1
   isParrying: 0
+--- !u!114 &4742564396360317417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170683860234278428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587f05b26e1e2774a9b3a90619e7c0dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 7060219424821333164}
