@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\assets\\scripts\\enemy\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\enemy\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1060EF9E-CD7A-4EAC-7460-884BCD6C792D}|Assembly-CSharp-Editor.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\editor\\foveditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1060EF9E-CD7A-4EAC-7460-884BCD6C792D}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\scripts\\editor\\foveditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\weapons\\pistolshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\pistolshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\enemy\\enemyshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyshooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|c:\\users\\je4vo\\documents\\github\\projectmechascape\\mechascape\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEA905A-2144-1B15-EDC5-A7B439D39FE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 221,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,14 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FOVEditor.cs",
-              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Editor\\FOVEditor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Editor\\FOVEditor.cs",
-              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Editor\\FOVEditor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Editor\\FOVEditor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAoAAABgAAAAAAAAAA==",
+              "Title": "PistolShooting.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\PistolShooting.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:09:40.21Z",
+              "WhenOpened": "2026-10-31T18:55:32.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyShooting.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyShooting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyShooting.cs",
+              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyShooting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyShooting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:54:26.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vzEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:44:00.175Z",
               "EditorCaption": ""
             },
             {
@@ -45,7 +79,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
               "ToolTip": "C:\\Users\\je4vo\\Documents\\GitHub\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-31T17:47:23.897Z",
               "EditorCaption": ""
