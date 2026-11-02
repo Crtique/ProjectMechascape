@@ -1,10 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.0/staging' branch; Version is '6000.0.84f1 (78ab6fc243d5) revision 7908207'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit EnterpriseS' Language: 'en' Physical Memory: 8075 MB
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32715 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Jaden" at "2026-11-01T06:28:53.2733228Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-11-01T03:36:43Z
+Date: 2026-11-01T06:28:53Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.0.84f1\Editor\Unity.exe
@@ -13,17 +14,16 @@ C:\Program Files\Unity\Hub\Editor\6000.0.84f1\Editor\Unity.exe
 -noUpm
 -name
 AssetImportWorker2
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Tim" at "2026-11-01T03:36:43.9194963Z"
 -projectPath
-C:/Users/Tim/Clinic_1_SP_26/ProjectMechascape/Mechascape
+D:/UnityStuff/ProjectMechascape/Mechascape
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49282
+57750
 -parentPid
-11608
+32392
 -analyticsCloudUserId
-2474823290163
+2475785382300
 -analyticsCloudProjectId
 2cd00ff1-a0d5-450e-98fb-febf534b6765
 -analyticsLocalProjectId
@@ -31,21 +31,21 @@ edc6a923d6e6f184e99878db70b7d33b
 -editorAnalyticsEnabled
 1
 -cbmEditorLicense
-e87dbfd26c611cd02fda370354a7ba231d11a46d
+0b32c6f8c8b413400e096cb392a86eb590d4aa94
 -cbmMachineId
-n68tpIRdSFZdwtP7gNkKxjDxzKc=
+5iOjQRs05cwTipDGa6d00ga92iw=
 -licensingIpc
-LicenseClient-Tim
+LicenseClient-Jaden
 -job-worker-count
-1
+7
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/Tim/Clinic_1_SP_26/ProjectMechascape/Mechascape
-C:/Users/Tim/Clinic_1_SP_26/ProjectMechascape/Mechascape
+Successfully changed project path to: D:/UnityStuff/ProjectMechascape/Mechascape
+D:/UnityStuff/ProjectMechascape/Mechascape
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -82,27 +82,16 @@ C:/Users/Tim/Clinic_1_SP_26/ProjectMechascape/Mechascape
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10228]  Target information:
+Player connection [22948]  Target information:
 
-Player connection [10228]  * "[IP] 10.80.78.118 [Port] 0 [Flags] 2 [Guid] 1339041744 [EditorId] 1339041744 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4DK9AJR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22948]  * "[IP] 172.20.81.141 [Port] 0 [Flags] 2 [Guid] 988110844 [EditorId] 988110844 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ADVG5P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10228] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [10228] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 1
+Player connection [22948] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22948] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 10588, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.3+d7ffd15
-  Session Id:              ee4b9bde0cbc4043a66fdf4a3fd1b789
-  Correlation Id:          49b7203b38b345d7cdedaaddc75d9bc8
-  External correlation Id: 8562167411399879771
-  Machine Id:              n68tpIRdSFZdwtP7gNkKxjDxzKc=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Tim" (connect: 0.00s, validation: 0.01s, handshake: 0.09s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Tim-notifications" at "2026-11-01T03:36:44.0247895Z"
-[Licensing::Module] Licensing Background thread has ended after 0.11s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -110,63 +99,80 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.45 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 2.81 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.84f1 (78ab6fc243d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Tim/Clinic_1_SP_26/ProjectMechascape/Mechascape/Assets
+[Subsystems] Discovering subsystems at path D:/UnityStuff/ProjectMechascape/Mechascape/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   NVIDIA
-    VRAM:     4004 MB
-    Driver:   32.0.15.8228
+    VRAM:     8018 MB
+    Driver:   32.0.16.1692
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016547 seconds.
-- Loaded All Assemblies, in  0.972 seconds
+Registered in 0.004155 seconds.
+- Loaded All Assemblies, in  0.426 seconds
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.3'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Jaden"
+[Licensing::IpcConnector] LicenseClient-Jaden channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Jaden-6000.0.84" at "2026-11-01T06:28:54.1356393Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 11216, path: "C:/Program Files/Unity/Hub/Editor/6000.0.84f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              906e43bdef004aca87aec9f4611ad89f
+  Correlation Id:          64c4611514b31cc47d3b1147f11339cc
+  External correlation Id: 6485372967076145889
+  Machine Id:              5iOjQRs05cwTipDGa6d00ga92iw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Jaden-6000.0.84" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Jaden-6000.0.84-notifications" at "2026-11-01T06:28:54.1435054Z"
+[Licensing::Module] Licensing Background thread has ended after 0.87s
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.564 seconds
-Domain Reload Profiling: 1531ms
-	BeginReloadAssembly (406ms)
+- Finished resetting the current domain, in  0.287 seconds
+Domain Reload Profiling: 709ms
+	BeginReloadAssembly (140ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (98ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (173ms)
-	LoadAllAssembliesAndSetupDomain (256ms)
-		LoadAssemblies (396ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (135ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (250ms)
-			TypeCache.Refresh (248ms)
-				TypeCache.ScanAssembly (228ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (174ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (565ms)
+	FinalizeReload (287ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (495ms)
+		SetupLoadedEditorAssemblies (246ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (111ms)
-			ProcessInitializeOnLoadAttributes (247ms)
-			ProcessInitializeOnLoadMethodAttributes (93ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -174,12 +180,7 @@ Domain Reload Profiling: 1531ms
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: F4-VMA5-DCUT-5RXG-6ARG-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 2474823290163-UnityPersXXXX
+  Id: 2475785382300-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -189,11 +190,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.858 seconds
+- Loaded All Assemblies, in  0.657 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.34 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 2.16 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -205,50 +206,640 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 4.36 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.61 ms, found 5 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.900 seconds
-Domain Reload Profiling: 4745ms
-	BeginReloadAssembly (897ms)
+- Finished resetting the current domain, in  0.696 seconds
+Domain Reload Profiling: 1349ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (112ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (1799ms)
-		LoadAssemblies (1250ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (437ms)
+		LoadAssemblies (277ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (882ms)
-			TypeCache.Refresh (667ms)
-				TypeCache.ScanAssembly (583ms)
-			BuildScriptInfoCaches (187ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1901ms)
+		AnalyzeDomain (240ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (144ms)
+			BuildScriptInfoCaches (70ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (697ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1665ms)
+		SetupLoadedEditorAssemblies (574ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (247ms)
-			ProcessInitializeOnLoadAttributes (1156ms)
-			ProcessInitializeOnLoadMethodAttributes (236ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 8.31 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.25 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7616 unused Assets / (5.3 MB). Loaded Objects now: 8320.
-Memory consumption went from 150.5 MB to 145.2 MB.
-Total: 36.634200 ms (FindLiveObjects: 2.786200 ms CreateObjectMapping: 2.480500 ms MarkObjects: 21.071900 ms  DeleteObjects: 10.292100 ms)
-
 Curl error 3: URL rejected: Malformed input to a URL function
+Unloading 7616 unused Assets / (4.7 MB). Loaded Objects now: 8317.
+Memory consumption went from 156.5 MB to 151.8 MB.
+Total: 9.251600 ms (FindLiveObjects: 0.995100 ms CreateObjectMapping: 0.611900 ms MarkObjects: 5.724000 ms  DeleteObjects: 1.919800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 124637.780163 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png
+  artifactKey: Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png using Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbcbda23edbb0f46b682fcbc27b1418e') in 0.0902315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.378823 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png
+  artifactKey: Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png using Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ea28422b060cbe8b0cfb255cded3010') in 0.0207055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.908885 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png
+  artifactKey: Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Gunner/Gunner Sprite Sheet.png using Guid(f0d7a7fd7648e9b4492fc86a0a931ca7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ae700fee278f73db3500c4bcdb68c236') in 0.1617865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.424994 seconds.
+  path: Assets/Gunner_Walk.anim
+  artifactKey: Guid(b2fbfde5417df8f4793aff5102855070) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Gunner_Walk.anim using Guid(b2fbfde5417df8f4793aff5102855070) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9a4558dcdd833362791d09c84664c279') in 0.0144681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  1.869 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.47 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.674 seconds
+Domain Reload Profiling: 2544ms
+	BeginReloadAssembly (334ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (1406ms)
+		LoadAssemblies (1361ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (232ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (675ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (531ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (343ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 1.78 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7614 unused Assets / (4.8 MB). Loaded Objects now: 8336.
+Memory consumption went from 165.0 MB to 160.2 MB.
+Total: 7.968600 ms (FindLiveObjects: 0.668000 ms CreateObjectMapping: 0.796900 ms MarkObjects: 4.350200 ms  DeleteObjects: 2.152900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.638 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.55 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.641 seconds
+Domain Reload Profiling: 1279ms
+	BeginReloadAssembly (190ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (184ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (164ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (642ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (333ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.91 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7614 unused Assets / (4.5 MB). Loaded Objects now: 8339.
+Memory consumption went from 165.1 MB to 160.6 MB.
+Total: 8.390900 ms (FindLiveObjects: 0.630000 ms CreateObjectMapping: 0.476500 ms MarkObjects: 5.233700 ms  DeleteObjects: 2.049900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.641 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.37 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.628 seconds
+Domain Reload Profiling: 1268ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (393ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (171ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (628ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (501ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.74 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7614 unused Assets / (4.8 MB). Loaded Objects now: 8342.
+Memory consumption went from 165.1 MB to 160.3 MB.
+Total: 8.560200 ms (FindLiveObjects: 0.674100 ms CreateObjectMapping: 0.409400 ms MarkObjects: 5.427200 ms  DeleteObjects: 2.048600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 113.741455 seconds.
+  path: Assets/Scenes/DemoSpace.unity
+  artifactKey: Guid(53da9d4e5c812da4b96b138c25c1d2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/DemoSpace.unity using Guid(53da9d4e5c812da4b96b138c25c1d2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6246fb107f165c72afea0334b664c7c6') in 0.014991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.389414 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png
+  artifactKey: Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png using Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '906e0336bbc1738483e4091dcdb06200') in 0.0640695 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.029587 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png
+  artifactKey: Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png using Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48183affa402303deab922eee291f858') in 0.0169191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.459246 seconds.
+  path: Assets/Dog_Shoot.anim
+  artifactKey: Guid(60be124522a5a7e4b8813844235b366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dog_Shoot.anim using Guid(60be124522a5a7e4b8813844235b366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8f22b485d0aa1ef4cc3f5f71edaef7e') in 0.0010412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.023378 seconds.
+  path: Assets/Gunner Sprite Sheet_0.controller
+  artifactKey: Guid(c4f8c9319b74a9443a9761bc0c02ccfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gunner Sprite Sheet_0.controller using Guid(c4f8c9319b74a9443a9761bc0c02ccfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '931d33a03d4e8674d0609a8b6eba8d1f') in 0.0016698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.345629 seconds.
+  path: Assets/Gunner Death Sprite Sheet.png
+  artifactKey: Guid(07a29c0e90dd2a54585563f6a3b3d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gunner Death Sprite Sheet.png using Guid(07a29c0e90dd2a54585563f6a3b3d816) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50caafe45720bc4ef33f52497d9e3d96') in 0.0009434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.064796 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/Gunner_Walk.anim
+  artifactKey: Guid(b2fbfde5417df8f4793aff5102855070) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Gunner/Gunner_Walk.anim using Guid(b2fbfde5417df8f4793aff5102855070) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e668a982260dabf996fb0d69fbc36167') in 0.1533311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png
+  artifactKey: Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet.png using Guid(94e5d699ec55ed147bacda2fa6f0487e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '01209d0b9aff7ce8f929dbbd7842d148') in 0.0471131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.201601 seconds.
+  path: Assets/Gunner Sprite Sheet.png
+  artifactKey: Guid(108363622b476164bb468017b008a3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gunner Sprite Sheet.png using Guid(108363622b476164bb468017b008a3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fcf9205b67cd2c4c373088541cd109c') in 0.0198734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.105733 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/Gunner_Walk.anim
+  artifactKey: Guid(b2fbfde5417df8f4793aff5102855070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Gunner/Gunner_Walk.anim using Guid(b2fbfde5417df8f4793aff5102855070) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5de05edb18ed95e458b1daca785011b') in 0.0009515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.760858 seconds.
+  path: Assets/Sprites/EnemySprites/Gunner/BreakableWorld.controller
+  artifactKey: Guid(9816a0916349cbb4d87614af59b773ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Gunner/BreakableWorld.controller using Guid(9816a0916349cbb4d87614af59b773ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '21400d72e6f091393d0d1b57c54025aa') in 0.0073952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.671 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.40 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.632 seconds
+Domain Reload Profiling: 1304ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (400ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (167ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (633ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.16 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7614 unused Assets / (4.3 MB). Loaded Objects now: 8352.
+Memory consumption went from 165.2 MB to 160.9 MB.
+Total: 8.559500 ms (FindLiveObjects: 0.760900 ms CreateObjectMapping: 0.497800 ms MarkObjects: 5.245300 ms  DeleteObjects: 2.054400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 58.355120 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet_0.controller
+  artifactKey: Guid(96e9194c39cdc6548a1e179504e03ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Blast Sprite sheet_0.controller using Guid(96e9194c39cdc6548a1e179504e03ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26daecedc54b29d2deef34bebfe0ec86') in 0.0187942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.953503 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog_Shoot.anim
+  artifactKey: Guid(60be124522a5a7e4b8813844235b366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog_Shoot.anim using Guid(60be124522a5a7e4b8813844235b366e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77dac7adbe4a40a7d3be64c231a81885') in 0.0022397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.237665 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Death Sprite Sheet.png
+  artifactKey: Guid(7b4f5d28a4ec37647b8697806e8f70e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Blaster Death Sprite Sheet.png using Guid(7b4f5d28a4ec37647b8697806e8f70e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9162b8d19a4374dc9289bcd01ed18d5e') in 0.0660706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.785274 seconds.
+  path: Assets/Dog_Death.anim
+  artifactKey: Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Dog_Death.anim using Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1ba02141703f3e8ba729e677558b9ef8') in 0.1482595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.177459 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png
+  artifactKey: Guid(f4eac58204286e44cad7da6002396884) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png using Guid(f4eac58204286e44cad7da6002396884) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f0e82bfb406410b6cfe51c90477f4e03') in 0.045827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.032729 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png
+  artifactKey: Guid(f4eac58204286e44cad7da6002396884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png using Guid(f4eac58204286e44cad7da6002396884) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9b556132d03d8481a07f79ec937d187') in 0.0219621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.208997 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png
+  artifactKey: Guid(f4eac58204286e44cad7da6002396884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog Balster Idel Sprite Sheet.png using Guid(f4eac58204286e44cad7da6002396884) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2c627cde76eb9968d410a1e208274dd') in 0.0211543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.395710 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog_Idle.anim
+  artifactKey: Guid(eec30dd6930071e4483b7f8c413185d0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog_Idle.anim using Guid(eec30dd6930071e4483b7f8c413185d0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '994eb426dd19ca9eccba9ada527be3ac') in 0.008382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.047994 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog_Death.anim
+  artifactKey: Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog_Death.anim using Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89ecd6a870290a37cd0b7815e5bd4aa2') in 0.0009405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.946690 seconds.
+  path: Assets/Sprites/EnemySprites/Blaster dog/Dog_Death.anim
+  artifactKey: Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/EnemySprites/Blaster dog/Dog_Death.anim using Guid(b07f03cc77399d940af9b15d7a1b0811) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b506d198c5e7c20862d9ad88aeae091c') in 0.0083712 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.023476 seconds.
+  path: Assets/Sprites/PlayerSprite/Cyborg Run FR1.png
+  artifactKey: Guid(e7d17aef94d700d4baf3b33bd90cf3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/Cyborg Run FR1.png using Guid(e7d17aef94d700d4baf3b33bd90cf3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79e32e8d76f405182db42b4dca1f6ff0') in 0.0122569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.578823 seconds.
+  path: Assets/Sprites/Cybrog Run Sprint Sheet.png
+  artifactKey: Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/Cybrog Run Sprint Sheet.png using Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bba8d46cff703c0999373d43c2c0ed83') in 0.0175505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.168165 seconds.
+  path: Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png
+  artifactKey: Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png using Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb83cec621529f8013bde0de11e507b5') in 0.017956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.927367 seconds.
+  path: Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png
+  artifactKey: Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png using Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4c3e1887cb9f700980300d5a89fa8e2c') in 0.014857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.177491 seconds.
+  path: Assets/Sprites/PlayerSprite/Cyborg_Run.anim
+  artifactKey: Guid(dba0b926b361db24fb54e42c66f8a2ed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/PlayerSprite/Cyborg_Run.anim using Guid(dba0b926b361db24fb54e42c66f8a2ed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a6df173125f99f4545012a941334c91a') in 0.0096619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.094619 seconds.
+  path: Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png
+  artifactKey: Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet.png using Guid(5e4b0415aa7ae9c45820ab4e87314761) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c79db1f2daa9c9537cdb07264c47ea5') in 0.0145676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.951912 seconds.
+  path: Assets/Prefabs/Bullet.prefab
+  artifactKey: Guid(b190eff4032582c4593b6b2650255d64) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Bullet.prefab using Guid(b190eff4032582c4593b6b2650255d64) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f47b34fd4cba4dd434d41a673c431de1') in 0.0443591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Dog Blaster Death Sprite Sheet_0.controller
+  artifactKey: Guid(b92450d7963e4da459a462277292b17c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Dog Blaster Death Sprite Sheet_0.controller using Guid(b92450d7963e4da459a462277292b17c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9ba0a499254a1704a168e20d8aa7d66f') in 0.0071896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet_0.controller
+  artifactKey: Guid(cd9cec3ef993d3244be89daa3b451b35) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/PlayerSprite/Cybrog Run Sprint Sheet_0.controller using Guid(cd9cec3ef993d3244be89daa3b451b35) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8a20b30857612c8313db42a287ce10a7') in 0.0100985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.691 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.49 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.655 seconds
+Domain Reload Profiling: 1346ms
+	BeginReloadAssembly (216ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (404ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (173ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (656ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (511ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (327ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 2.09 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7614 unused Assets / (4.7 MB). Loaded Objects now: 8375.
+Memory consumption went from 165.3 MB to 160.6 MB.
+Total: 8.901100 ms (FindLiveObjects: 0.709100 ms CreateObjectMapping: 1.034700 ms MarkObjects: 4.828700 ms  DeleteObjects: 2.327500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
