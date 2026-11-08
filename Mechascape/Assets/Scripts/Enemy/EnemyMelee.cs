@@ -16,6 +16,7 @@ public class EnemyMelee : MonoBehaviour
     #region Private Variables
     private RaycastHit2D hitPlayer;
     private GameObject target;
+    private Animator anim;
     private float distance; // Stores distance between enemy and Player
     private bool attack;
     private bool inRange; // Checks if Player is in range
@@ -26,7 +27,7 @@ public class EnemyMelee : MonoBehaviour
     void Awake()
     {
         intTimer = tba; // Stores initial value of tba
-
+        anim = GetComponent<Animator>();
     }
     
     void Update()
@@ -44,11 +45,11 @@ public class EnemyMelee : MonoBehaviour
             {
                 inRange = false;
             }
-
-            if(inRange == false)
-            {
-                StopAttack();
-            }
+        }
+        else
+        {
+            anim.SetBool("canWalk", true);
+            StopAttack();
         }
     }
 
@@ -73,19 +74,24 @@ public class EnemyMelee : MonoBehaviour
         else if(attackDistance >= distance && cooldown != false)
         {
             Attack();
+            Debug.Log("Attacking");
         }
 
         if(cooldown)
         {
+            anim.SetBool("Attack", false);
             Cooldown();
         }
     }
 
     void Move()
     {
-        //Surround in a if statement checking for not attack animation when implemented
-        Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        anim.SetBool("canWalk", true);
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Claw Attack"))
+       { 
+           Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+           transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+       }
     }
 
     void Attack()
@@ -93,8 +99,8 @@ public class EnemyMelee : MonoBehaviour
         tba = intTimer; // Resets tba when the Player enters range
         attack = true; // Checks if the enemy is still capable of attacking
 
-        //Set anim.SetBool("canWalk", false); once animations are implemented
-        //Set anim.SetBool("Attack", true); once animations are implemented
+        anim.SetBool("canWalk", false);
+        anim.SetBool("Attack", true);
     }
 
     void Cooldown()
@@ -112,7 +118,7 @@ public class EnemyMelee : MonoBehaviour
     {
         cooldown = false;
         attack = false;
-        //Set anim.SetBool("Attack", false); once animations are implemented
+        anim.SetBool("Attack", false);
     }
 
     public void TriggerCooling()

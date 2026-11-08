@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemy\\EnemyMelee.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemy\\FieldOfView.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -22,17 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 221,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAGMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T05:13:48.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FieldOfView.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
               "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\FieldOfView.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\FieldOfView.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-02T03:18:54.36Z",
               "EditorCaption": ""
@@ -45,14 +62,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMelee.cs",
               "ToolTip": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\Enemy\\EnemyMelee.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMelee.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAH0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-02T02:55:34.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Spikes.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Clinic_1_SP_26\\ProjectMechascape\\Mechascape\\Assets\\Scripts\\WorldAssets\\Spikes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WorldAssets\\Spikes.cs",
@@ -60,8 +77,7 @@
               "RelativeToolTip": "Assets\\Scripts\\WorldAssets\\Spikes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T03:58:06.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T03:58:06.328Z"
             }
           ]
         }
