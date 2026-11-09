@@ -552,6 +552,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &809674879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9149268171986801811, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+  m_PrefabInstance: {fileID: 3961419278497658558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &829762092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1699,22 @@ PrefabInstance:
     - target: {fileID: 1469217293357180972, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447612658672197667, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: selectedWeapon
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 809674879}
+    - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: ground.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_Name

@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class PistolShooting : MonoBehaviour
 {
-    [Header("Weapon Knockback Refrance")]
+    [Header("Weapon Knockback Reference")]
     [SerializeField] private WeaponKnockback wkb;
 
     [Header("Weapon Shooting Settings")]
     [SerializeField] private Transform gun;
     [SerializeField] private Transform shootPoint;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private Transform groundCheck;
 
     [Header("Bullet Fire Settings")]
     [SerializeField] private GameObject bullet;
@@ -30,6 +32,13 @@ public class PistolShooting : MonoBehaviour
         }
     }
 
+    private bool IsGrounded()
+    {
+        float radius = 0.2f;
+
+        return Physics2D.OverlapCircle(groundCheck.position, radius, groundMask);
+    }
+
     void Shoot()
     {
         tr.emitting = true;
@@ -40,7 +49,9 @@ public class PistolShooting : MonoBehaviour
         bulletInst.GetComponent<Rigidbody2D>().AddForce(bulletInst.transform.right * bulletSpeed);
         Destroy(bulletInst, 3);
 
-        wkb.ApplyKnockbackForce();
-
+        if(!IsGrounded())
+        {
+            wkb.ApplyKnockbackForce();
+        }
     }
 }
