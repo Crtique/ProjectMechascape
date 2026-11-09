@@ -64,13 +64,13 @@ public class EnemyMovement : MonoBehaviour
             if (Physics2D.Raycast(transform.position, Vector2.right, halfWidth + 0.1f, LayerMask.GetMask("Ground")))
             {
                 currentDirection *= -1;
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = false;
             }
             //Detects if the enemy is on a ledge. If so, switch directions
             else if (stayOnLedges && !Physics2D.Raycast(rightPos, Vector2.down, halfHeight + 0.1f, LayerMask.GetMask("Ground")))
             {
                 currentDirection *= -1;
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = false;
             }
         }
         else if (rigidBody.linearVelocity.x < 0)
@@ -79,13 +79,13 @@ public class EnemyMovement : MonoBehaviour
             if (Physics2D.Raycast(transform.position, Vector2.left, halfWidth + 0.1f, LayerMask.GetMask("Ground")))
             {
                 currentDirection *= -1;
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
             //Detects if the enemy is on a ledge. If so, switch directions
             else if (stayOnLedges && !Physics2D.Raycast(leftPos, Vector2.down, halfHeight + 0.1f, LayerMask.GetMask("Ground")))
             {
                 currentDirection *= -1;
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
         }
     }
