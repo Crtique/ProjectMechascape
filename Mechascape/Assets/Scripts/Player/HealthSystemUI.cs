@@ -3,10 +3,16 @@ using UnityEngine.UI;
 
 public class HealthSystemUI : MonoBehaviour
 {
-    public Image fillImage;
-    
-    public void UpdateHealthBar(int current, int max)
+    [SerializeField] private Image fillImage;
+
+    // Reference to our HealthSystem script
+    [SerializeField] private HealthSystem healthSystem;
+
+    public void UpdateHealthBar(float current, float max)
     {
-        fillImage.fillAmount = (float)current / max;
+        if (fillImage != null)
+        {
+            fillImage.fillAmount = max > 0 ? current / max : 0f;
+        }
     }
 }
