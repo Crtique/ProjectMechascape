@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PistolShooting : MonoBehaviour
 {
@@ -18,11 +19,14 @@ public class PistolShooting : MonoBehaviour
     [SerializeField] private float bulletDelay = 2f;
     [SerializeField] private float LastBulletShot;
 
+    public Slider ammoSlider;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentAmmo = maxAmmo;
+        UpdateAmmo();
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class PistolShooting : MonoBehaviour
         {
             Shoot();
             currentAmmo -= 1;
+            UpdateAmmo();
         }
     }
 
@@ -51,14 +56,16 @@ public class PistolShooting : MonoBehaviour
     
     public void UpdateAmmo(int addAmmo)
     {
-        if (currentAmmo < maxAmmo)
-        {
-            currentAmmo += addAmmo;
-            if (currentAmmo >  maxAmmo)
-            {
-                maxAmmo = currentAmmo;
-            }
-        }
+        currentAmmo = Mathf.Clamp(currentAmmo + addAmmo, 0, maxAmmo);
 
+        UpdateAmmo();
+
+    }
+    void UpdateAmmo()
+    {
+        if(ammoSlider != null)
+        {
+            ammoSlider.value = currentAmmo;
+        }
     }
 }

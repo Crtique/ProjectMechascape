@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private Transform groundCheck;
 
-    [SerializeField] private HealthSystem health;
 
     private float moveX;
     private bool isFacingRight = false;
@@ -51,11 +50,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private WeaponKnockback wkb;
+    [SerializeField] private HealthSystem healthSystem;
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (healthSystem == null)
+        {
+            healthSystem = GetComponent<HealthSystem>();
+        }
     }
 
     private void Update()
@@ -66,7 +71,11 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.E))
-            health.TakeDamage(10f);
+            healthSystem.TakeDamage(10);
+
+        if (Input.GetKeyDown(KeyCode.L))
+            healthSystem.Heal(10);
+        
 
         Inputs();
         FlipSprite();

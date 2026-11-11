@@ -4,13 +4,10 @@ using System.Collections.Generic;
 
 public class Spikes : MonoBehaviour
 {
-	public float damage = 10.0f;
+	public int damage = 10;
+	[SerializeField] HealthSystem healthSystem;
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		HealthSystem health = collision.collider.GetComponent<HealthSystem>();
-		if(health != null)
-		{
-			health.TakeDamage(damage);
-		}
-	}
+        healthSystem.TakeDamage(damage);
+    }
 }

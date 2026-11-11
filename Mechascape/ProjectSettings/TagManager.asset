@@ -9,6 +9,7 @@ TagManager:
   - Crate
   - OneWayPlatform
   - AmmoDrop
+  - HealthDrop
   layers:
   - Default
   - TransparentFX

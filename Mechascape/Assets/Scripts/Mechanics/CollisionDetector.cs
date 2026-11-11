@@ -4,8 +4,10 @@ public class CollisionDetector : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private PistolShooting ps;
+    [SerializeField] private HealthSystem hs;
 
     private int ammo = 10; // Number that the ammunition provides
+    private int heal = 10;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,6 +15,12 @@ public class CollisionDetector : MonoBehaviour
         if (gameObject.CompareTag("Player") && collision.CompareTag("AmmoDrop"))
         {
             ps.UpdateAmmo(ammo);
+            Destroy(collision.gameObject);
+        }
+
+        else if (gameObject.CompareTag("Player") && collision.CompareTag("HealthDrop"))
+        {
+            hs.Heal(heal);
             Destroy(collision.gameObject);
         }
     }
