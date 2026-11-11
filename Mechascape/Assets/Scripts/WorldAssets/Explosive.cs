@@ -6,8 +6,10 @@ public class Explosive : MonoBehaviour
 {
     [SerializeField] private float radius;
     [SerializeField] private float force;
-    public float damage = 10.0f;
+    public int damage = 10;
     [SerializeField] private PlayerController pc;
+    [SerializeField] private HealthSystem healthSystem;
+
 
     public void Explosion()
     {
@@ -25,11 +27,7 @@ public class Explosive : MonoBehaviour
                 rb2D.AddForce(direction * forceFinal);
 
                 //Damage Calculation
-                HealthSystem health = collider.GetComponent<HealthSystem>();
-		        if(health != null)
-		        {
-			        health.TakeDamage(damage);
-		        }
+                healthSystem.TakeDamage(damage);
             }
         }
         Destroy(this.gameObject);

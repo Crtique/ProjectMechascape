@@ -16,17 +16,18 @@ public class EnemyMelee : MonoBehaviour
     #region Private Variables
     private RaycastHit2D hitPlayer;
     private GameObject target;
+    private Animator anim;
     private float distance; // Stores distance between enemy and Player
     private bool attack;
     private bool inRange; // Checks if Player is in range
-    private bool cooldown; // Checks if the enemy is has attacked and is "cooling down"
+    private bool cooldown = false; // Checks if the enemy is has attacked and is "cooling down"
     private float intTimer;
     #endregion
 
     void Awake()
     {
         intTimer = tba; // Stores initial value of tba
-
+        anim = GetComponent<Animator>();
     }
     
     void Update()
@@ -34,18 +35,22 @@ public class EnemyMelee : MonoBehaviour
         if(inRange)
         {
             hitPlayer = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, rayCastMask);
+            RaycastDebugger();
 
             //When the enemy detects the Player
             if(hitPlayer.collider != null)
             {
                 EnemyLogic();
             }
-            else if(hitPlayer.collider == null)
+            else
             {
                 inRange = false;
             }
-
-            if(inRange == false)
+        }
+        else
+        {
+            anim.SetBool("canWalk", true);
+            if (attack || cooldown)
             {
                 StopAttack();
             }
@@ -61,6 +66,18 @@ public class EnemyMelee : MonoBehaviour
         }
     }
 
+    void RaycastDebugger()
+    {
+        if(distance > attackDistance)
+        {
+            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
+        }
+        else if(attackDistance > distance)
+        {
+            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
+        }
+    }
+
     void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.transform.position);
@@ -68,51 +85,63 @@ public class EnemyMelee : MonoBehaviour
         if(distance > attackDistance)
         {
             Move();
-            StopAttack();
+            if (attack || cooldown)
+            {
+                StopAttack();
+            }
         }
-        else if(attackDistance >= distance && cooldown != false)
+        else if(!cooldown)
         {
             Attack();
         }
-
-        if(cooldown)
+        else
         {
+            Debug.Log("Col");
+            anim.SetBool("Attack", false);
             Cooldown();
         }
     }
 
     void Move()
     {
-        //Surround in a if statement checking for not attack animation when implemented
-        Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        Debug.Log("Moving");
+        anim.SetBool("canWalk", true);
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Claw Attack"))
+        { 
+           Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+           transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        }
     }
 
     void Attack()
     {
+        Debug.Log("Attack");
         tba = intTimer; // Resets tba when the Player enters range
         attack = true; // Checks if the enemy is still capable of attacking
 
-        //Set anim.SetBool("canWalk", false); once animations are implemented
-        //Set anim.SetBool("Attack", true); once animations are implemented
+        anim.SetBool("canWalk", false);
+        anim.SetBool("Attack", true);
     }
 
     void Cooldown()
     {
         tba -= Time.deltaTime;
 
-        if(tba <= 0 && cooldown && attack)
+        if(tba <= 0)
         {
+            attack = false;
             cooldown = false;
             tba = intTimer;
+            anim.SetBool("Attack", false);
         }
     }
 
     void StopAttack()
     {
+        Debug.Log("Stop");
         cooldown = false;
         attack = false;
-        //Set anim.SetBool("Attack", false); once animations are implemented
+        anim.SetBool("Attack", false);
     }
 
     public void TriggerCooling()

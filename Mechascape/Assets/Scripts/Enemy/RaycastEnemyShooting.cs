@@ -7,11 +7,13 @@ public class RaycastEnemyShooting : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] private Transform playerTarget;
     [SerializeField] private LineRenderer lr;
+    [SerializeField] private HealthSystem healthSystem;
+
 
     [Header("Shooting Settings")]
     [SerializeField] private float range;
     [SerializeField] private float fireRate;
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
     [SerializeField] private LayerMask hitMask;
 
     private float nextFireTime;

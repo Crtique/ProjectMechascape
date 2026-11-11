@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WeaponKnockback : MonoBehaviour
 {
-    [Header("Refrances")]
+    [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
     [Header("Knockback Settings")]
