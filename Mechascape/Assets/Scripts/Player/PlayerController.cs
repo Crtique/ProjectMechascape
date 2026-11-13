@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour
     public bool isGroundSlamming;
     private bool hasDealtGroundSlamDamage = false;
 
-    private float groundSlamTime = 0.2f;
     private float groundSlamCoolDown = 0.1f;
 
 
@@ -69,14 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-            healthSystem.TakeDamage(10);
-
-        if (Input.GetKeyDown(KeyCode.L))
-            healthSystem.Heal(10);
         
-
         Inputs();
         FlipSprite();
     }
@@ -110,11 +102,12 @@ public class PlayerController : MonoBehaviour
         // Get X axis inputs
         moveX = Input.GetAxisRaw("Horizontal");
 
-        // Dash Input
+        #region Dash Input
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
+        #endregion
 
         #region JUMPING INPUTS
         // If pressing space do a small jump
@@ -130,15 +123,6 @@ public class PlayerController : MonoBehaviour
         if (!IsGrounded() && Input.GetKeyDown(KeyCode.LeftControl) && canGroundSlam && !isGroundSlamming)
         {
             StartCoroutine(GroundSlamming());
-        }
-        else if (IsGrounded() && isGroundSlamming && !hasDealtGroundSlamDamage)
-        {
-            hasDealtGroundSlamDamage = true;
-            GroundSlammingDamage(groundSlamDamage);
-        }
-        else if (!IsGrounded() && !isGroundSlamming && hasDealtGroundSlamDamage)
-        {
-            hasDealtGroundSlamDamage = false;
         }
 
         #endregion
@@ -216,6 +200,7 @@ public class PlayerController : MonoBehaviour
     {
         canGroundSlam = false;
         isGroundSlamming = true;
+        hasDealtGroundSlamDamage = false;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
@@ -223,9 +208,23 @@ public class PlayerController : MonoBehaviour
 
         tr.emitting = true;
 
-        yield return new WaitForSeconds(groundSlamTime);
+        // Keep checking if the player is ground or not
+        while (!IsGrounded())
+        {
+            yield return null;
+        }
+
+        // Stop Groundslamming
         tr.emitting = false;
         isGroundSlamming = false;
+
+        // Deal damage when hitting the ground
+        if (!hasDealtGroundSlamDamage)
+        {
+            hasDealtGroundSlamDamage = true;
+            GroundSlammingDamage(groundSlamDamage);
+        }
+
 
         yield return new WaitForSeconds(groundSlamCoolDown);
         canGroundSlam = true;
