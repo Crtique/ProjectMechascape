@@ -14,7 +14,7 @@ public class CollisionDetector : MonoBehaviour
     {
         if (gameObject.CompareTag("Player") && collision.CompareTag("AmmoDrop"))
         {
-            ps.UpdateAmmo(ammo);
+            ps.UpdateAmmoReserve(ammo);
             Destroy(collision.gameObject);
         }
 

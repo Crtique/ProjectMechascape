@@ -1,3 +1,4 @@
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,12 @@ public class PistolShooting : MonoBehaviour
     [Header("Weapon Shooting Settings")]
     [SerializeField] private Transform gun;
     [SerializeField] private Transform shootPoint;
+
+    [Header("Ammunition Settings")]
     [SerializeField] private int maxAmmo = 10;
     [SerializeField] private int currentAmmo;
+    [SerializeField] private int ammoReserve = 25;
+    [SerializeField] private int ammoMaxReserve = 50;
 
     [Header("Bullet Fire Settings")]
     [SerializeField] private GameObject bullet;
@@ -26,20 +31,34 @@ public class PistolShooting : MonoBehaviour
     void Start()
     {
         currentAmmo = maxAmmo;
-        UpdateAmmo();
+        UpdateAmmoUI();
     }
 
     // Update is called once per frame
     void Update()
     {
+        WeaponInputs();
+    }
+
+    // Inputs for our weapon
+    void WeaponInputs()
+    {
+        // Shoot
         if (Input.GetMouseButtonDown(0) && Time.time - LastBulletShot >= bulletDelay && currentAmmo > 0)
         {
             Shoot();
             currentAmmo -= 1;
-            UpdateAmmo();
+            UpdateAmmoUI();
+        }
+
+        // Reload
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            Reload();
         }
     }
 
+    // Shoot our gun
     void Shoot()
     {
         tr.emitting = true;
@@ -54,14 +73,33 @@ public class PistolShooting : MonoBehaviour
 
     }
     
-    public void UpdateAmmo(int addAmmo)
+    // Method to Reload our gun
+    void Reload()
     {
-        currentAmmo = Mathf.Clamp(currentAmmo + addAmmo, 0, maxAmmo);
+        if (currentAmmo < maxAmmo && ammoReserve > 0)
+        {
+            // Calculate how much ammo we need
+            int bulletsNeed = maxAmmo - currentAmmo;
 
-        UpdateAmmo();
+            // Check how many we can actually Move over from our reserve
+            int transferBullets = Mathf.Min(bulletsNeed, ammoReserve);
+
+            // Actually Move the Ammo over to our currentAmmo
+            currentAmmo += transferBullets;
+            ammoReserve -= transferBullets;
+        }
+    }
+
+    // Add ammo to the players reserve
+    // We need a UI asset for the ammo reserve
+    public void UpdateAmmoReserve(int addAmmo)
+    {
+        ammoReserve = Mathf.Clamp(ammoReserve + addAmmo, 0, ammoMaxReserve);
 
     }
-    void UpdateAmmo()
+
+    // Update ammo UI (this is just a method to track how much we have visually)
+    void UpdateAmmoUI()
     {
         if(ammoSlider != null)
         {
