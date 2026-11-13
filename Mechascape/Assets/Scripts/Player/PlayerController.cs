@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed; 
     [SerializeField] private float jumpHeight;
     [SerializeField] private Transform parryPivot;
+    private Animator anim;
 
 
     [Header("GroundSlamming Control")]
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         if (healthSystem == null)
         {
@@ -93,10 +96,21 @@ public class PlayerController : MonoBehaviour
 
         // Move Player
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
+
+        // Determines what animation plays
+        if(Mathf.Abs(rb.linearVelocity.x) > 0.1f && IsGrounded())
+        {
+            anim.SetBool("isMove", true);
+        }
+        else{
+            anim.SetBool("isMove", false);
+        }
     }
 
     private bool IsGrounded()
     {
+        anim.SetBool("onGround", true);
+
         float radius = 0.2f;
 
         return Physics2D.OverlapCircle(groundCheck.position, radius, groundMask);

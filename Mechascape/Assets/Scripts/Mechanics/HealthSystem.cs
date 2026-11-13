@@ -7,9 +7,14 @@ public class HealthSystem : MonoBehaviour
     [Header("Health Settings")]
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private float currentHealth;
+    private Animator anim;
 
     public Slider healthSlider;
 
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void Start()
     {
         currentHealth = maxHealth;
@@ -25,6 +30,11 @@ public class HealthSystem : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            anim.SetBool("hasDed", true);
+            if(!CompareTag("Player"))
+            {
+                Destroy(this.gameObject, 3f);
+            }
             Debug.Log("Dead");
         } 
     }
