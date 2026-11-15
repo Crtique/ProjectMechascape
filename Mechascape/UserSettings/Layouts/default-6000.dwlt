@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 106
+  controlID: 107
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 1
-  controlID: 107
+  controlID: 108
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 109
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -827,9 +827,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 259.8639, y: 684.07544, z: -0.95114434}
+    m_Target: {x: 254.45381, y: 721.3122, z: -0.124782115}
     speed: 2
-    m_Value: {x: 259.8639, y: 684.07544, z: -0.95114434}
+    m_Value: {x: 254.45381, y: 721.3122, z: -0.124782115}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -879,9 +879,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 95.60684
+    m_Target: 12.97107
     speed: 2
-    m_Value: 95.60684
+    m_Value: 12.97107
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -953,9 +953,9 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 9195}
-      m_SelectedIDs: 7e3dfeff7c3dfeff7a3dfeff783dfeff763dfeff743dfeff723dfeff703dfeff
-      m_LastClickedID: -115344
+      scrollPos: {x: 0, y: 10555}
+      m_SelectedIDs: 0841feff
+      m_LastClickedID: -114424
       m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/MiscObjects
+    - Assets/Prefabs/Pickups
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1047,7 +1047,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 84d10000
     m_LastClickedID: 53636
-    m_ExpandedIDs: 00000000e6cb0000eecb000068cc00006acc00006ccc00006ecc000070cc000072cc000074cc0000
+    m_ExpandedIDs: 0000000094cc00009ccc000016cd000018cd00001acd00001ccd00001ecd000020cd000022cd0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1073,10 +1073,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 57.72632}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000e6cb0000eecb000068cc00006acc00006ccc00006ecc000070cc000074cc0000b0ce0000
+    m_ExpandedIDs: ffffffff0000000094cc00009ccc000016cd000018cd00001acd00001ccd00001ecd000020cd000022cd000068cf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
