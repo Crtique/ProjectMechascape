@@ -80,7 +80,7 @@ public class RaycastEnemyShooting : MonoBehaviour
 
         DealDamage(hit);
 
-        lr.startWidth = lr.endWidth = 0.4f;
+        lr.startWidth = lr.endWidth = 0.5f;
 
         // apply visuals
         if (lr != null)
