@@ -265,3 +265,115 @@ Received Import Request.
 Start importing Assets/Scenes/DemoSpace.unity using Guid(53da9d4e5c812da4b96b138c25c1d2e4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2787a056fa3d45f8641fd8992bbe72d7') in 0.0772717 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 131.740115 seconds.
+  path: Assets/Sprites/BackgroundElements/BG_Bulb_0.prefab
+  artifactKey: Guid(e7df39a4d271d314bbb5816f8ab65ad7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BG_Bulb_0.prefab using Guid(e7df39a4d271d314bbb5816f8ab65ad7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '69b36dc49472d25583c413cebfa6d8c5') in 0.3284411 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/TileSprites/SpikeBoundR.prefab
+  artifactKey: Guid(1a4d4a82d391130479ed06a43135a541) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/SpikeBoundR.prefab using Guid(1a4d4a82d391130479ed06a43135a541) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '719acd35d2eb567d87a737733848b466') in 0.1440023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Bulb.png
+  artifactKey: Guid(409d717008b035a4a9cfdefe9f966357) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Bulb.png using Guid(409d717008b035a4a9cfdefe9f966357) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bc985a5f552cd39782a45b3d11bb960f') in 0.2019305 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/TileSprites/SpikeBoundL.prefab
+  artifactKey: Guid(cd74b194f3085b3428dca2216ea01b9d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/SpikeBoundL.prefab using Guid(cd74b194f3085b3428dca2216ea01b9d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '331d3b77d1f1f529a7b1d23807636497') in 0.0307409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Prefabs/TilePalette.prefab
+  artifactKey: Guid(55361e0ca8b72ec43909f99a02701350) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TilePalette.prefab using Guid(55361e0ca8b72ec43909f99a02701350) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '488b11c6f954f9e25dc06e786363c3d0') in 0.0390292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Prefabs/TileSprites/3-WallTile.png
+  artifactKey: Guid(ecbe3e6bbf687c94980abb7adce2f3c8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/3-WallTile.png using Guid(ecbe3e6bbf687c94980abb7adce2f3c8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3147831d8123d973b8d20d24dfd219f3') in 0.0418179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/BackgroundElements/BG_Window_0.prefab
+  artifactKey: Guid(53d182a55f5c0ac48929011759d195f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BG_Window_0.prefab using Guid(53d182a55f5c0ac48929011759d195f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a87e45e2f640b347ccc9c248b2f74c8b') in 0.0293293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/TileSprites/WallTile_0.asset
+  artifactKey: Guid(509c0a7b95fcee04aa58f40a0f0eb2e3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/WallTile_0.asset using Guid(509c0a7b95fcee04aa58f40a0f0eb2e3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fd2efbb16470f2681fd887a9a66474b5') in 0.0247777 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/TileSprites/4-SpikesD.png
+  artifactKey: Guid(104d04aa144507b4eb3a590209372686) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/4-SpikesD.png using Guid(104d04aa144507b4eb3a590209372686) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd2e5814c433673c56c08d88473531e20') in 0.0244986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/MiscObjects
+  artifactKey: Guid(e98b46cb29de4f2448f008de40e4b4a0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/MiscObjects using Guid(e98b46cb29de4f2448f008de40e4b4a0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '64fbef35dfc482eca85d28ebba3d98cf') in 0.0159287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/BackgroundElements/BG_Window_and_Bulb_0.prefab
+  artifactKey: Guid(4acfa45b2c43679408875c88e7ceeeee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BG_Window_and_Bulb_0.prefab using Guid(4acfa45b2c43679408875c88e7ceeeee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '101ecaf8daab12026a968f4632076614') in 0.0295791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/BackgroundElements/BackgroundSprites
+  artifactKey: Guid(43af1ed1d4fbe5048a1c89c592069723) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BackgroundSprites using Guid(43af1ed1d4fbe5048a1c89c592069723) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '95df6668479cf9268b9c83798526ce77') in 0.0154133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/MiscObjects/Health pick up.png
+  artifactKey: Guid(d7e1191d5d9c80940b4d666c1363abbb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/MiscObjects/Health pick up.png using Guid(d7e1191d5d9c80940b4d666c1363abbb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c374514d960635dbe75ae4955fbf13f4') in 0.0779509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Prefabs/Pickups
+  artifactKey: Guid(8d70333b7ff3b8a4db68425b653a17ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Pickups using Guid(8d70333b7ff3b8a4db68425b653a17ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b43484bcfa560ba5da6c68b0fc5ce989') in 0.02223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

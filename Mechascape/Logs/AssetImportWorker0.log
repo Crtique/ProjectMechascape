@@ -305,3 +305,123 @@ Received Import Request.
 Start importing Assets/Prefabs/Enemy Prefabs/Turret.prefab using Guid(aa877634aa109114ea99a2f86c3b6d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '880175394e7d5f09e5740f5c5ccb111d') in 0.0671882 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
 
+========================================================================
+Received Import Request.
+  Time since last request: 137.312136 seconds.
+  path: Assets/Scenes/DemoSpace.unity
+  artifactKey: Guid(53da9d4e5c812da4b96b138c25c1d2e4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/DemoSpace.unity using Guid(53da9d4e5c812da4b96b138c25c1d2e4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f36a2e740ad8c9b9d40c5c4804a1bdcb') in 0.1482853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/mechascape.unity
+  artifactKey: Guid(de5485a6c2a544e4ba9758e8f444d64f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/mechascape.unity using Guid(de5485a6c2a544e4ba9758e8f444d64f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cee77ab8255fafb5b677148496c27768') in 0.0696244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Prefabs/Enemy Prefabs/Claw 1.prefab
+  artifactKey: Guid(3282c87e916b6a1408aa15b6d869a5a9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Enemy Prefabs/Claw 1.prefab using Guid(3282c87e916b6a1408aa15b6d869a5a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '716e776c5a7ed318b8a4875fc865b62e') in 0.083222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/TileSprites/SpikesR_0.asset
+  artifactKey: Guid(2d8e460ae2f08364898fd836530d2dd2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/SpikesR_0.asset using Guid(2d8e460ae2f08364898fd836530d2dd2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '26b863f9683358679e5ada3936302b39') in 0.0269896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Prefabs/TileSprites/SpikeBoundD.prefab
+  artifactKey: Guid(b19e8bc3e1a6e894f8e3dc035a175b43) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/SpikeBoundD.prefab using Guid(b19e8bc3e1a6e894f8e3dc035a175b43) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '194dfbb1ab5f2ec3b515170827843c77') in 0.0300044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Window.png
+  artifactKey: Guid(10e75a7c3beaa5947872498b5f764bd1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Window.png using Guid(10e75a7c3beaa5947872498b5f764bd1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c356204d28edc3d9dca441d89724e81f') in 0.1728961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefabs/TileSprites/2-RoofTile.png
+  artifactKey: Guid(f2ba5a6287f2af4478b24052d570b800) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/2-RoofTile.png using Guid(f2ba5a6287f2af4478b24052d570b800) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c374df23683615979962b36cad1c7eb4') in 0.0266369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Prefabs/TileSprites/7-SpikesU.png
+  artifactKey: Guid(19a846aafc7af9944a22e55d1c82e0ce) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/7-SpikesU.png using Guid(19a846aafc7af9944a22e55d1c82e0ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b8e7b6fb90658ccdb23a14ec17120520') in 0.0290477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Prefabs/TileSprites
+  artifactKey: Guid(b1d4a88c78195544c8730fde5953ea9e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites using Guid(b1d4a88c78195544c8730fde5953ea9e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e83e27d80cfcfa8551850ebc9fed17b8') in 0.0188509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Window_and_Bulb.png
+  artifactKey: Guid(dcd352a66891afc478376b23a921ed11) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Window_and_Bulb.png using Guid(dcd352a66891afc478376b23a921ed11) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ee33c5b8f8841f320315c17d5b9a30d6') in 0.026952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/TileSprites/5-SpikesR.png
+  artifactKey: Guid(3c5761b024cfbb8429a4df627a411a3f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/5-SpikesR.png using Guid(3c5761b024cfbb8429a4df627a411a3f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '548eaafe3e04bab599bf2deb531dc4ac') in 0.0276459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/MiscObjects/Pistol Refill.png
+  artifactKey: Guid(20e7302639d491d41ae94997ae7fea48) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/MiscObjects/Pistol Refill.png using Guid(20e7302639d491d41ae94997ae7fea48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cfd25ff616001569271e595fda83a012') in 0.0362032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/LevelSection3-Edit.unity
+  artifactKey: Guid(7bb02e1e05c950c44a2e6d254a7cef82) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/LevelSection3-Edit.unity using Guid(7bb02e1e05c950c44a2e6d254a7cef82) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8b50dcb42eef15c47c3e9dedeffc9d8f') in 0.0469917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Plain.png
+  artifactKey: Guid(e11c2b0aedd9bee4782e3ea678040d53) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Sprites/BackgroundElements/BackgroundSprites/BG_Plain.png using Guid(e11c2b0aedd9bee4782e3ea678040d53) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9650d9334e9d61dfc20c44bd35af9728') in 0.1638787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Prefabs/TileSprites/Bounds.prefab
+  artifactKey: Guid(7da99f72495f9484c91f0d47696d3b1c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/TileSprites/Bounds.prefab using Guid(7da99f72495f9484c91f0d47696d3b1c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9315fbb10ca797da05dbf2c75ab878a6') in 0.0318981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
