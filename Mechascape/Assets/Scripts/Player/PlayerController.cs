@@ -26,7 +26,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dashing Seetings")]
     [SerializeField] float dashingPower;
-
+    [Header("Dash UI")]
+    [SerializeField] private UnityEngine.UI.Image dashUI;
     // Dashing Variables
     private bool canDash = true;
     private bool isDashing;
@@ -176,36 +177,45 @@ public class PlayerController : MonoBehaviour
     #region DASHING CONTROL
 
     // Coroutine that manages all of our Dashing control
-    private IEnumerator Dash()
+private IEnumerator Dash()
+{
+    canDash = false;
+    isDashing = true;
+
+    float originalGravity = rb.gravityScale;
+    rb.gravityScale = 0f;
+
+    float dashingDirection = moveX != 0 ? moveX : (isFacingRight ? 1f : -1f);
+
+    rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
+
+    tr.emitting = true;
+
+    // Dash UI becomes empty
+    dashUI.fillAmount = 0f;
+
+    yield return new WaitForSeconds(dashingTime);
+
+    tr.emitting = false;
+
+    rb.gravityScale = originalGravity;
+    isDashing = false;
+
+    // Cooldown UI refills
+    float cooldownTimer = 0f;
+
+    while (cooldownTimer < dashingCooldown)
     {
-        canDash = false;    // Player can longer dash once dashing
-        isDashing = true;   // Player now begins to dash
+        cooldownTimer += Time.deltaTime;
 
-        // Store Orginal Gravity
-        float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
+        dashUI.fillAmount = cooldownTimer / dashingCooldown;
 
-        // We check whether out MoveX value is zero or not. If MoveX isn't zero then the player has pressed either A or D
-        // Yet when MoveX is zero the player is no longer providing input to the system. Yet we check if we are facing right or not and use those values for our MoveX
-        // We will dash based on what our MoveX value becomes from our isFacingRight Boolean Variable
-        float dashingDirection = moveX != 0 ? moveX:(isFacingRight ? 1f:-1f);
-
-        rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
-
-        tr.emitting = true;
-
-        // Stop dashing after waiting for a short ammount of time then reset our gravity
-        yield return new WaitForSeconds(dashingTime);
-
-        tr.emitting = false;
-
-        rb.gravityScale = originalGravity;
-        isDashing = false;
-
-        // Wait for another short ammount of time and then allow the player to dash again
-        yield return new WaitForSeconds(dashingCooldown);
-        canDash = true;
+        yield return null;
     }
+
+    dashUI.fillAmount = 1f;
+    canDash = true;
+}
 
     #endregion
 
