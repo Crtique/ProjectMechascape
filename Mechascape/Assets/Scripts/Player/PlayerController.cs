@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed; 
     [SerializeField] private float jumpHeight;
     [SerializeField] private Transform parryPivot;
+    private Animator anim;
 
 
     [Header("GroundSlamming Control")]
@@ -20,7 +22,6 @@ public class PlayerController : MonoBehaviour
     public bool isGroundSlamming;
     private bool hasDealtGroundSlamDamage = false;
 
-    private float groundSlamTime = 0.2f;
     private float groundSlamCoolDown = 0.1f;
 
 
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         if (healthSystem == null)
         {
@@ -70,14 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-            healthSystem.TakeDamage(10);
-
-        if (Input.GetKeyDown(KeyCode.L))
-            healthSystem.Heal(10);
         
-
         Inputs();
         FlipSprite();
     }
@@ -94,10 +89,21 @@ public class PlayerController : MonoBehaviour
 
         // Move Player
         rb.linearVelocity = new Vector2(moveX * moveSpeed, rb.linearVelocity.y);
+
+        // Determines what animation plays
+        if(Mathf.Abs(rb.linearVelocity.x) > 0.1f && IsGrounded())
+        {
+            anim.SetBool("isMove", true);
+        }
+        else{
+            anim.SetBool("isMove", false);
+        }
     }
 
     private bool IsGrounded()
     {
+        anim.SetBool("onGround", true);
+
         float radius = 0.2f;
 
         return Physics2D.OverlapCircle(groundCheck.position, radius, groundMask);
@@ -111,11 +117,12 @@ public class PlayerController : MonoBehaviour
         // Get X axis inputs
         moveX = Input.GetAxisRaw("Horizontal");
 
-        // Dash Input
+        #region Dash Input
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
+        #endregion
 
         #region JUMPING INPUTS
         // If pressing space do a small jump
@@ -131,15 +138,6 @@ public class PlayerController : MonoBehaviour
         if (!IsGrounded() && Input.GetKeyDown(KeyCode.LeftControl) && canGroundSlam && !isGroundSlamming)
         {
             StartCoroutine(GroundSlamming());
-        }
-        else if (IsGrounded() && isGroundSlamming && !hasDealtGroundSlamDamage)
-        {
-            hasDealtGroundSlamDamage = true;
-            GroundSlammingDamage(groundSlamDamage);
-        }
-        else if (!IsGrounded() && !isGroundSlamming && hasDealtGroundSlamDamage)
-        {
-            hasDealtGroundSlamDamage = false;
         }
 
         #endregion
@@ -226,6 +224,7 @@ private IEnumerator Dash()
     {
         canGroundSlam = false;
         isGroundSlamming = true;
+        hasDealtGroundSlamDamage = false;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
@@ -233,9 +232,23 @@ private IEnumerator Dash()
 
         tr.emitting = true;
 
-        yield return new WaitForSeconds(groundSlamTime);
+        // Keep checking if the player is ground or not
+        while (!IsGrounded())
+        {
+            yield return null;
+        }
+
+        // Stop Groundslamming
         tr.emitting = false;
         isGroundSlamming = false;
+
+        // Deal damage when hitting the ground
+        if (!hasDealtGroundSlamDamage)
+        {
+            hasDealtGroundSlamDamage = true;
+            GroundSlammingDamage(groundSlamDamage);
+        }
+
 
         yield return new WaitForSeconds(groundSlamCoolDown);
         canGroundSlam = true;
