@@ -214,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 5
   angle: 360
-  enemySprite: {fileID: 0}
+  enemySprite: {fileID: 6539007874407199221}
   enemyPivotPoint: {fileID: 0}
   playerRef: {fileID: 0}
   targetMask:
