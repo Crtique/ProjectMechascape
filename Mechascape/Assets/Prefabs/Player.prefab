@@ -289,11 +289,14 @@ MonoBehaviour:
   shootPoint: {fileID: 8472718645907600765}
   maxAmmo: 10
   currentAmmo: 0
+  ammoReserve: 25
+  ammoMaxReserve: 50
   bullet: {fileID: 3369974331148047224, guid: b190eff4032582c4593b6b2650255d64, type: 3}
-  bulletSpeed: 1200
+  bulletSpeed: 2000
   tr: {fileID: 1070666636943757053, guid: b190eff4032582c4593b6b2650255d64, type: 3}
   bulletDelay: 2
   LastBulletShot: 0
+  ammoSlider: {fileID: 0}
 --- !u!1 &8498734755136646993
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469217293357180972}
+  - component: {fileID: 6067298218856618562}
   - component: {fileID: 5617243384422110796}
   - component: {fileID: 5198335176442648685}
   - component: {fileID: 7060219424821333164}
@@ -400,6 +404,28 @@ Transform:
   - {fileID: 1476930408498857423}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6067298218856618562
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170683860234278428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd4b7273646685549a3c76cd93ea97f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &5617243384422110796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -531,7 +557,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.39636728, b: 0, a: 1}
+      key0: {r: 0, g: 1, b: 0.024614096, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -648,20 +674,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
-  jumpHeight: 15
+  jumpHeight: 30
   parryPivot: {fileID: 1476930408498857423}
   fallSpeed: 50
   groundSlamDamage: 10
   isGroundSlamming: 0
-  dashingPower: 40
+  dashingPower: 50
+  dashUI: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   groundCheck: {fileID: 9149268171986801811}
-  health: {fileID: 194287107154409453}
   tr: {fileID: 5198335176442648685}
   playerSprite: {fileID: 5617243384422110796}
   wkb: {fileID: 2111140965145732855}
+  healthSystem: {fileID: 0}
 --- !u!114 &194287107154409453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,9 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
+  healthSlider: {fileID: 0}
 --- !u!114 &6528466659054191227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,3 +746,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps: {fileID: 8946459924796414706}
+  hs: {fileID: 194287107154409453}

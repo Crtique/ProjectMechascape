@@ -2080,33 +2080,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: healthUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: fillImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 2024175716}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: currentMaxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: onHealthChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: onHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2024175711}
-    - target: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: onHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1469217293357180972, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.08
@@ -2147,22 +2123,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5617243384422110796, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8434190384023138932, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: hs
-      value: 
-      objectReference: {fileID: 3961419278497658563}
     - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: ammoSlider
       value: 
       objectReference: {fileID: 1582624695}
-    - target: {fileID: 8946459924796414706, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: bulletSpeed
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2170,49 +2134,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 3961419278497658565}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
 --- !u!1 &3961419278497658559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
   m_PrefabInstance: {fileID: 3961419278497658558}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3961419278497658563 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 194287107154409453, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-  m_PrefabInstance: {fileID: 3961419278497658558}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3961419278497658559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9292b2fd37018e4cb290a1d958f8d15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &3961419278497658565
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3961419278497658559}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dd4b7273646685549a3c76cd93ea97f4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4519825660522955701
 PrefabInstance:
   m_ObjectHideFlags: 0
