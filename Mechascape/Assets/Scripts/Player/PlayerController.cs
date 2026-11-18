@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,8 +24,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dashing Seetings")]
     [SerializeField] float dashingPower;
+
     [Header("Dash UI")]
     [SerializeField] private UnityEngine.UI.Image dashUI;
+
     // Dashing Variables
     private bool canDash = true;
     private bool isDashing;

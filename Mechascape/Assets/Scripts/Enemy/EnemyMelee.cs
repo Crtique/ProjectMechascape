@@ -5,11 +5,11 @@ using System.Collections.Generic;
 public class EnemyMelee : MonoBehaviour
 {
     #region Public Variables
-    public Transform rayCast;
-    public LayerMask rayCastMask;
-    public float rayCastLength;
+    public Transform rayCast; // Position where the enemies detection ray starts
+    public LayerMask rayCastMask; // which layer to detect
+    public float rayCastLength; // how far the enemy can see the player
     public float attackDistance; // Minimum distance required for attack
-    public float moveSpeed;
+    public float moveSpeed; // enemy move speed
     public float tba; // Time Between Attacks
     #endregion
 
@@ -24,10 +24,16 @@ public class EnemyMelee : MonoBehaviour
     private float intTimer;
     #endregion
 
+    [SerializeField] private HealthSystem hs;
+    private int damage = 10;
+
+
+
     void Awake()
     {
         intTimer = tba; // Stores initial value of tba
         anim = GetComponent<Animator>();
+        hs = FindFirstObjectByType<HealthSystem>();
     }
     
     void Update()
@@ -38,7 +44,7 @@ public class EnemyMelee : MonoBehaviour
             RaycastDebugger();
 
             //When the enemy detects the Player
-            if(hitPlayer.collider != null)
+            if (hitPlayer.collider != null && hitPlayer.collider.CompareTag("Player"))
             {
                 EnemyLogic();
             }
@@ -59,7 +65,7 @@ public class EnemyMelee : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D trig)
     {
-        if (trig.gameObject.tag == "Player")
+        if (trig.CompareTag("Player"))
         {
             target = trig.gameObject;
             inRange = true;
@@ -127,7 +133,7 @@ public class EnemyMelee : MonoBehaviour
     {
         tba -= Time.deltaTime;
 
-        if(tba <= 0)
+        if (tba <= 0)
         {
             attack = false;
             cooldown = false;
@@ -147,5 +153,19 @@ public class EnemyMelee : MonoBehaviour
     public void TriggerCooling()
     {
         cooldown = true;
+    }
+
+    // Called outside of this script
+    void DealDamage()
+    {
+        if (hs == null || target == null) return;
+
+        distance = Vector2.Distance(transform.position, target.transform.position);
+
+        if (distance <= attackDistance)
+        {
+            hs.TakeDamage(damage);
+            Debug.Log("PLayer took" + damage);
+        }
     }
 }

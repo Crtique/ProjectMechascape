@@ -9,7 +9,6 @@ public class RaycastEnemyShooting : MonoBehaviour
     [SerializeField] private LineRenderer lr;
     private HealthSystem health;
 
-
     [Header("Shooting Settings")]
     [SerializeField] private float range;
     [SerializeField] private float fireRate;
@@ -20,8 +19,20 @@ public class RaycastEnemyShooting : MonoBehaviour
 
     private float nextFireTime;
 
+    private void Awake()
+    {
+        health = FindFirstObjectByType<HealthSystem>();
+
+        // Auto assign Player Transform
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            playerTarget = player.transform;
+        }
+    }
+
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         DetectPlayer();
     }
@@ -97,11 +108,11 @@ public class RaycastEnemyShooting : MonoBehaviour
     {
         if (hit.collider == null) return;
 
-        HealthSystem healthS = hit.collider.GetComponentInParent<HealthSystem>();
+        health = hit.collider.GetComponentInParent<HealthSystem>();
 
-        if (healthS == null) return;
+        if (health == null) return;
 
-        healthS.TakeDamage(damage);
+        health.TakeDamage(damage);
     }
 
     private IEnumerator RenderLaserTracer(Vector2 hitPoint)

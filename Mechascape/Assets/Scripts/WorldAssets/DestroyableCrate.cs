@@ -4,6 +4,11 @@ public class DestroyableCrate : MonoBehaviour
 {
     [SerializeField] private PlayerController pc;
 
+    private void Start()
+    {
+        pc = FindFirstObjectByType<PlayerController>();
+
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && pc.isGroundSlamming)

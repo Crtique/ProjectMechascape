@@ -98,7 +98,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -115,7 +115,7 @@ Animator:
   m_GameObject: {fileID: 4926546890561143364}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e365680ecaa7034bbe5713b770e34f9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   radius: 5
   angle: 360
   enemySprite: {fileID: 6539007874407199221}
-  enemyPivotPoint: {fileID: 0}
+  enemyPivotPoint: {fileID: 8936623433186658545}
   playerRef: {fileID: 0}
   targetMask:
     serializedVersion: 2
