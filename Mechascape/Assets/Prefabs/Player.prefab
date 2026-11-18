@@ -71,9 +71,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4842457676327159263}
   - component: {fileID: 8294153704466528713}
-  - component: {fileID: 5635517312399762375}
   m_Layer: 0
-  m_Name: ParryingCollider
+  m_Name: KickingCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,27 +130,15 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 1, y: 3}
   m_EdgeRadius: 0
---- !u!114 &5635517312399762375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044298557522698841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52a1ac5ee3a0c9a428ae28a1a0cbe33b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6895501417769563397
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476930408498857423}
   m_Layer: 0
-  m_Name: ParryPivot
+  m_Name: KickPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,9 +363,9 @@ GameObject:
   - component: {fileID: 7860505530606999197}
   - component: {fileID: 1485925464705405893}
   - component: {fileID: 194287107154409453}
-  - component: {fileID: 6528466659054191227}
   - component: {fileID: 4742564396360317417}
   - component: {fileID: 8434190384023138932}
+  - component: {fileID: 8585388789118410739}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -704,22 +691,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 0}
---- !u!114 &6528466659054191227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9170683860234278428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea9bb1ff90a6f8f4981bc25b240ec8c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parryCollider: {fileID: 8294153704466528713}
-  parryWindowTime: 0.12
-  parryingWindowCooldown: 1
-  isParrying: 0
 --- !u!114 &4742564396360317417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,3 +718,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ps: {fileID: 8946459924796414706}
   hs: {fileID: 194287107154409453}
+--- !u!114 &8585388789118410739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170683860234278428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fccc7ceae0cb24c90df46e0b95af2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kickCollider: {fileID: 8294153704466528713}

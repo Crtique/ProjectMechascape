@@ -891,11 +891,6 @@ MonoBehaviour:
   player: {fileID: 640821672}
   lookAheadDistance: 3
   lookAheadSpeed: 5
---- !u!61 &1360847282 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8294153704466528713, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-  m_PrefabInstance: {fileID: 3961419278497658558}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1582624693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,10 +1870,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6528466659054191227, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
-      propertyPath: KickCollider
-      value: 
-      objectReference: {fileID: 1360847282}
     - target: {fileID: 9170683860234278428, guid: 5ae76c38d00853f49a9edc9bfd0dd591, type: 3}
       propertyPath: m_Name
       value: Player
