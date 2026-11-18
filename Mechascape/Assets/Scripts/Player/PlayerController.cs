@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -62,6 +63,12 @@ public class PlayerController : MonoBehaviour
         if (healthSystem == null)
         {
             healthSystem = GetComponent<HealthSystem>();
+        }
+
+        GameObject dashBarObj = GameObject.Find("DashIcon");
+        if (dashBarObj != null)
+        {
+            dashUI = dashBarObj.GetComponent<Image>();
         }
     }
 
@@ -174,45 +181,45 @@ public class PlayerController : MonoBehaviour
     #region DASHING CONTROL
 
     // Coroutine that manages all of our Dashing control
-private IEnumerator Dash()
-{
-    canDash = false;
-    isDashing = true;
-
-    float originalGravity = rb.gravityScale;
-    rb.gravityScale = 0f;
-
-    float dashingDirection = moveX != 0 ? moveX : (isFacingRight ? 1f : -1f);
-
-    rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
-
-    tr.emitting = true;
-
-    // Dash UI becomes empty
-    dashUI.fillAmount = 0f;
-
-    yield return new WaitForSeconds(dashingTime);
-
-    tr.emitting = false;
-
-    rb.gravityScale = originalGravity;
-    isDashing = false;
-
-    // Cooldown UI refills
-    float cooldownTimer = 0f;
-
-    while (cooldownTimer < dashingCooldown)
+    private IEnumerator Dash()
     {
-        cooldownTimer += Time.deltaTime;
+        canDash = false;
+        isDashing = true;
 
-        dashUI.fillAmount = cooldownTimer / dashingCooldown;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
 
-        yield return null;
+        float dashingDirection = moveX != 0 ? moveX : (isFacingRight ? 1f : -1f);
+
+        rb.linearVelocity = new Vector2(dashingDirection * dashingPower, 0f);
+
+        tr.emitting = true;
+
+        // Dash UI becomes empty
+        dashUI.fillAmount = 0f;
+
+        yield return new WaitForSeconds(dashingTime);
+
+        tr.emitting = false;
+
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+
+        // Cooldown UI refills
+        float cooldownTimer = 0f;
+
+        while (cooldownTimer < dashingCooldown)
+        {
+            cooldownTimer += Time.deltaTime;
+
+            dashUI.fillAmount = cooldownTimer / dashingCooldown;
+
+            yield return null;
+        }
+
+        dashUI.fillAmount = 1f;
+        canDash = true;
     }
-
-    dashUI.fillAmount = 1f;
-    canDash = true;
-}
 
     #endregion
 

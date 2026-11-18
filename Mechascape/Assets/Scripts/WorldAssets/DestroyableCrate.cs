@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class DestroyableCrate : MonoBehaviour
 {
-    [SerializeField] private PlayerController pc;
+    [Header("Item Drops")]
+    [SerializeField] private GameObject[] pickUpDrops;
+    private readonly float dropChance = 0.7f;
+
+    private PlayerController pc;
 
     private void Start()
     {
@@ -14,16 +18,31 @@ public class DestroyableCrate : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && pc.isGroundSlamming)
         {
             pc.GroundSlammingDamage(10);
-            Destroy(this.gameObject);
+            DestroyCrate();
+        }
+
+        else if (collision.gameObject.CompareTag("Bullet"))
+        {
+            //DestroyCrate();
+            DestroyCrate();
+            Destroy(collision.gameObject);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void DestroyCrate()
     {
-        if (collision.gameObject.CompareTag("Bullet"))
+        Destroy(this.gameObject);
+        DropPickUps();
+    }
+
+    void DropPickUps()
+    {
+        if (pickUpDrops.Length == 0) return;
+
+        if (Random.value <= dropChance && pickUpDrops.Length > 0)
         {
-            Destroy(this.gameObject);
-            Destroy(collision.gameObject);
+            int index = Random.Range(0, pickUpDrops.Length);
+            Instantiate(pickUpDrops[index], transform.position, Quaternion.identity);
         }
     }
 }

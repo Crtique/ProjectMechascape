@@ -27,8 +27,6 @@ public class EnemyMelee : MonoBehaviour
     [SerializeField] private HealthSystem hs;
     private int damage = 10;
 
-
-
     void Awake()
     {
         intTimer = tba; // Stores initial value of tba

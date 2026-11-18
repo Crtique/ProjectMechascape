@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: -8322428055481504531}
   - component: {fileID: 6539007874407199221}
   - component: {fileID: 5561254124100743391}
-  - component: {fileID: 9026259134810731070}
   m_Layer: 0
   m_Name: Gunner
   m_TagString: Untagged
@@ -200,29 +199,6 @@ MonoBehaviour:
   tr: {fileID: 1916393872402771524, guid: 0235a89bfc444394fac3bdaaf0527743, type: 3}
   bulletDelay: 1
   timeOfLastShot: 0
---- !u!114 &9026259134810731070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4926546890561143364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98dcd71cc08860043998ec46f78e2741, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 5
-  angle: 360
-  enemySprite: {fileID: 6539007874407199221}
-  enemyPivotPoint: {fileID: 8936623433186658545}
-  playerRef: {fileID: 0}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &7706621270647979893
 GameObject:
   m_ObjectHideFlags: 0

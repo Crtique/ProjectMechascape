@@ -6,10 +6,10 @@ public class CollisionDetector : MonoBehaviour
     [SerializeField] private PistolShooting ps;
     [SerializeField] private HealthSystem hs;
 
-    private int ammo = 10; // Number that the ammunition provides
-    private int heal = 10;
+    private readonly int ammo = 10; // Number that the ammunition provides
+    private readonly int heal = 10;
 
-    private int damage = 10;
+    private readonly int damage = 10;
 
 
     private void OnTriggerEnter2D(Collider2D collision)

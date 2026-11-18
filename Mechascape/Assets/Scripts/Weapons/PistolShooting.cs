@@ -27,6 +27,14 @@ public class PistolShooting : MonoBehaviour
     public Slider ammoSlider;
 
 
+    private void Awake()
+    {
+        GameObject ammoBarObj = GameObject.Find("AmmoTracker");
+        if (ammoBarObj != null)
+        {
+            ammoSlider = ammoBarObj.GetComponent<Slider>();
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -55,6 +63,7 @@ public class PistolShooting : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.R))
         {
             Reload();
+            UpdateAmmoUI();
         }
     }
 

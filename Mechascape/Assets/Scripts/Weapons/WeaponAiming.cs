@@ -21,8 +21,6 @@ public class WeaponAiming : MonoBehaviour
         // return a rotation around the Z axis
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
         FixWeaponFlip(rotZ);
-
-
     }
 
     void FixWeaponFlip(float angle)

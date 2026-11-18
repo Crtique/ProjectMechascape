@@ -14,6 +14,12 @@ public class HealthSystem : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
+
+        GameObject healthBarObj = GameObject.Find("HealthBar");
+        if (healthBarObj != null)
+        {
+            healthSlider = healthBarObj.GetComponent<Slider>();
+        }
     }
     private void Start()
     {
