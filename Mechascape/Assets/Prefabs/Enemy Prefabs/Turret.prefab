@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 5957906174879985623}
   - component: {fileID: 4291021469592334356}
   - component: {fileID: 9068791588188491833}
+  - component: {fileID: 8676646281949445902}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: TurrentEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +314,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -329,3 +330,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.898, y: 2.196}
   m_EdgeRadius: 0
+--- !u!114 &8676646281949445902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317433155487195563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0bb3d91ddb7ca4994ef7e4a85f9295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  hs: {fileID: 0}
+  ehs: {fileID: 0}
