@@ -35,7 +35,7 @@ public class EnemyShooting : MonoBehaviour
         // Shooting function
         GameObject bulletInst = Instantiate(bullet, shootPoint.position, shootPoint.rotation);
 
-        bulletInst.GetComponent<Rigidbody2D>().AddForce(bulletInst.transform.right * bulletSpeed);
+        bulletInst.GetComponent<Rigidbody2D>().AddForce(shootPoint.right * bulletSpeed);
         Destroy(bulletInst, 3);
     }
 }

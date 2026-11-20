@@ -47,21 +47,21 @@ public class CollisionDetector : MonoBehaviour
         #region ENEMY DAMAGE
 
         // Deal Damage to the Gunner enemy
-        else if (gameObject.CompareTag("RangedEnemy") && collision.CompareTag("Bullet"))
+        else if (gameObject.CompareTag("RangedEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             ehs.EnemyTakeDamage(damage);
             Debug.Log("RangedEnemy Took Damage!");
         }
 
         // Deal Damage to the Turret Dog Enemy
-        else if (gameObject.CompareTag("TurrentEnemy") && collision.CompareTag("Bullet"))
+        else if (gameObject.CompareTag("TurrentEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             ehs.EnemyTakeDamage(damage);
             Debug.Log("Turret Took Damage!");
         }
 
         // Deals Damage to the Claw enemy
-        else if (gameObject.CompareTag("MeleeEnemy") && collision.CompareTag("Bullet"))
+        else if (gameObject.CompareTag("MeleeEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             Debug.Log("MeleeEnemy Took Damage!");
         }

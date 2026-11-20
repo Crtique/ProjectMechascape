@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 8294153704466528713}
   m_Layer: 0
   m_Name: KickingCollider
-  m_TagString: Untagged
+  m_TagString: KickCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 3}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &6895501417769563397
 GameObject:
@@ -718,6 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ps: {fileID: 8946459924796414706}
   hs: {fileID: 194287107154409453}
+  ehs: {fileID: 0}
 --- !u!114 &8585388789118410739
 MonoBehaviour:
   m_ObjectHideFlags: 0
