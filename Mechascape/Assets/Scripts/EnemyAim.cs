@@ -7,6 +7,7 @@ public class EnemyAim : MonoBehaviour
 
     [Header("Enemy")]
     [SerializeField] private Transform enemySprite;
+    [SerializeField] private Transform gun;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +39,12 @@ public class EnemyAim : MonoBehaviour
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        // Rotate the gun
+        gun.rotation = Quaternion.Euler(0f, 0f, angle);
+
+        // Flip the gun vertically when aiming left
+        Vector3 scale = gun.localScale;
+        scale.y = direction.x < 0 ? -1 : 1;
+        gun.localScale = scale;
     }
 }

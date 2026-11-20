@@ -354,4 +354,4 @@ MonoBehaviour:
   bulletDelay: 0.5
   timeOfLastShot: 0
   playerTarget: {fileID: 0}
-  range: 5
+  range: 10

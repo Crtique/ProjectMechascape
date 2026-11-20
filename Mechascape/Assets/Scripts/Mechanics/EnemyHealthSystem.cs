@@ -24,6 +24,7 @@ public class EnemyHealthSystem : MonoBehaviour
         if (currentEnemyHealth <= 0)
         {
             DropPickUps();
+            Destroy(gameObject);
             Debug.Log("Dead");
         }
     }

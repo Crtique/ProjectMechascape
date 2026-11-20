@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 2354070476029255425}
   - component: {fileID: 3807176576692504494}
   - component: {fileID: 7471262803944469285}
+  - component: {fileID: 243629310870024834}
   m_Layer: 0
   m_Name: Claw
   m_TagString: MeleeEnemy
@@ -370,6 +371,52 @@ MonoBehaviour:
   currentEnemyHealth: 0
   maxEnemyHealth: 50
   pickUpDrops: []
+--- !u!61 &243629310870024834
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400488293022597078}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -1.019495, y: 0.7690058}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 10.24}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.104885, y: 2.6578712}
+  m_EdgeRadius: 0
 --- !u!1 &5088641522581151041
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +561,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.7103136, y: 0.93074393}
+  m_Offset: {x: 1.8800468, y: -0.5018136}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -524,7 +571,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.4111009, y: 3.09061}
+  m_Size: {x: 2.44701, y: 0.2254945}
   m_EdgeRadius: 0
 --- !u!1 &8923306404848660890
 GameObject:

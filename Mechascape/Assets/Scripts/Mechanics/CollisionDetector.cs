@@ -50,6 +50,7 @@ public class CollisionDetector : MonoBehaviour
         else if (gameObject.CompareTag("RangedEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             ehs.EnemyTakeDamage(damage);
+            Destroy(collision.gameObject);
             Debug.Log("RangedEnemy Took Damage!");
         }
 
@@ -57,12 +58,15 @@ public class CollisionDetector : MonoBehaviour
         else if (gameObject.CompareTag("TurrentEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             ehs.EnemyTakeDamage(damage);
+            Destroy(collision.gameObject);
             Debug.Log("Turret Took Damage!");
         }
 
         // Deals Damage to the Claw enemy
         else if (gameObject.CompareTag("MeleeEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
+            ehs.EnemyTakeDamage(damage);
+            Destroy(collision.gameObject);
             Debug.Log("MeleeEnemy Took Damage!");
         }
         #endregion
