@@ -369,6 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentEnemyHealth: 0
   maxEnemyHealth: 50
+  pickUpDrops: []
 --- !u!1 &5088641522581151041
 GameObject:
   m_ObjectHideFlags: 0

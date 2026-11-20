@@ -353,3 +353,5 @@ MonoBehaviour:
   tr: {fileID: 1916393872402771524, guid: 0235a89bfc444394fac3bdaaf0527743, type: 3}
   bulletDelay: 0.5
   timeOfLastShot: 0
+  playerTarget: {fileID: 0}
+  range: 5
