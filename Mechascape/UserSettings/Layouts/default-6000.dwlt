@@ -20,8 +20,7 @@ MonoBehaviour:
     height: 772.8
   m_ShowMode: 4
   m_Title: Game
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 382}
+
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -39,13 +38,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
-    y: 333.6
-    width: 234.4
-    height: 167.19998
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 16}
+
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -147,6 +140,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,8 +164,7 @@ MonoBehaviour:
     height: 716.8
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
-  vertical: 0
-  controlID: 1192
+
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,12 +185,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1259.2
-    height: 716.8
-  m_MinSize: {x: 200, y: 150}
-  m_MaxSize: {x: 16192, y: 24288}
-  vertical: 1
-  controlID: 1193
+
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -218,12 +206,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1259.2
-    height: 500.8
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 0
-  controlID: 1194
+
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -242,11 +225,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 234.4
-    height: 333.6
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 14}
+
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -268,11 +247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 234.4
     y: 0
-    width: 1024.7999
-    height: 500.8
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 15}
+
   m_Panes:
   - {fileID: 15}
   - {fileID: 17}
@@ -332,7 +307,7 @@ MonoBehaviour:
   - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &14
+
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,9 +346,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 740bb1ffea63b1ff6cd5b2ff48ecb3fff809b6ffe460b7ffb4a8b7ff5496edff7009efff7286efffa2d8f0ff52daf0ff62f9f0ff1407f1ff1484f1ff7cd2f2ff340efefff48bfeff68d8ffff5afaffffbced0000
+
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Canvas
@@ -398,7 +371,7 @@ MonoBehaviour:
       m_IsLocked: 1
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
+
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
