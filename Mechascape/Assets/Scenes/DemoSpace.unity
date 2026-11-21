@@ -1708,11 +1708,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c77401f351ea30544a318a9f7f89e9c0, type: 3}
---- !u!4 &2126289257 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2468532300841577606, guid: c53b13b7630c89747931eb03596fa219, type: 3}
-  m_PrefabInstance: {fileID: 4733955209522619416}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1001257577862066938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1895,22 +1890,6 @@ PrefabInstance:
     - target: {fileID: 2179707106541116796, guid: c53b13b7630c89747931eb03596fa219, type: 3}
       propertyPath: m_Name
       value: Gunner
-      objectReference: {fileID: 0}
-    - target: {fileID: 2917378435569067379, guid: c53b13b7630c89747931eb03596fa219, type: 3}
-      propertyPath: gun
-      value: 
-      objectReference: {fileID: 2126289257}
-    - target: {fileID: 2917378435569067379, guid: c53b13b7630c89747931eb03596fa219, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 640821672}
-    - target: {fileID: 2917378435569067379, guid: c53b13b7630c89747931eb03596fa219, type: 3}
-      propertyPath: aimPivot
-      value: 
-      objectReference: {fileID: 2126289257}
-    - target: {fileID: 4040439967109649510, guid: c53b13b7630c89747931eb03596fa219, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.951
       objectReference: {fileID: 0}
     - target: {fileID: 4989627442755395426, guid: c53b13b7630c89747931eb03596fa219, type: 3}
       propertyPath: m_LocalPosition.x

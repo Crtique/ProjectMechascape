@@ -48,11 +48,16 @@ public class EnemyShooting : MonoBehaviour
     void Shoot()
     {
         tr.emitting = true;
+        Vector2 shootDirection = (playerTarget.position - shootPoint.position).normalized;
+
+        // Calculate the matching world rotation for the bullet sprite
+        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+        Quaternion bulletRotation = Quaternion.Euler(0f, 0f, angle);
 
         // Shooting function
-        GameObject bulletInst = Instantiate(bullet, shootPoint.position, shootPoint.rotation);
+        GameObject bulletInst = Instantiate(bullet, shootPoint.position, bulletRotation);
 
-        bulletInst.GetComponent<Rigidbody2D>().AddForce(shootPoint.right * bulletSpeed);
+        bulletInst.GetComponent<Rigidbody2D>().AddForce(shootDirection * bulletSpeed);
         Destroy(bulletInst, 3);
     }
 
