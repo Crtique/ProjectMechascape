@@ -20687,6 +20687,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3193660681789571871, guid: ac10d50444562de44b36a1c24c04df51, type: 3}
+      propertyPath: sceneToLoad
+      value: LevelSection4
+      objectReference: {fileID: 0}
     - target: {fileID: 4323381913133402268, guid: ac10d50444562de44b36a1c24c04df51, type: 3}
       propertyPath: m_Name
       value: LevelExit
