@@ -360,3 +360,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentEnemyHealth: 0
   maxEnemyHealth: 1
+  pickUpDrops: []

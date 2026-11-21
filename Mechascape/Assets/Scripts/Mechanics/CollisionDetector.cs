@@ -21,6 +21,7 @@ public class CollisionDetector : MonoBehaviour
     private readonly int damage = 10;
 
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Pick Up Ammo
@@ -44,13 +45,19 @@ public class CollisionDetector : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        // Spike deals damage to player
+        else if (gameObject.CompareTag("Player") && collision.CompareTag("Obstacle"))
+        {
+            hs.TakeDamage(damage);
+        }
+
         #region ENEMY DAMAGE
 
         // Deal Damage to the Gunner enemy
         else if (gameObject.CompareTag("RangedEnemy") && collision.CompareTag("Bullet") || collision.CompareTag("KickCollider"))
         {
             ehs.EnemyTakeDamage(damage);
-            Destroy(collision.gameObject);
+            //Destroy(bullet);
             Debug.Log("RangedEnemy Took Damage!");
         }
 

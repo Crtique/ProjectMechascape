@@ -153,7 +153,7 @@ public class EnemyMelee : MonoBehaviour
         cooldown = true;
     }
 
-    // Called outside of this script
+    // Called outside of this script inside of the claw enemies animator using and animation event
     void DealDamage()
     {
         if (hs == null || target == null) return;
