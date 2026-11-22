@@ -9,6 +9,8 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] private float currentHealth;
     private Animator anim;
 
+    [SerializeField] private Canvas deathScreen;
+
     public Slider healthSlider;
 
     private void Awake()
@@ -25,6 +27,9 @@ public class HealthSystem : MonoBehaviour
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
+
+        Time.timeScale = 1.0f;
+        deathScreen.enabled = false;
     }
 
     public void TakeDamage(float amount)
@@ -36,7 +41,7 @@ public class HealthSystem : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            anim.SetBool("hasDed", true);
+            GameOver();
             if(!CompareTag("Player"))
             {
                 Destroy(this.gameObject, 3f);
@@ -65,5 +70,12 @@ public class HealthSystem : MonoBehaviour
         {
             healthSlider.value = currentHealth;
         }
+    }
+
+    void GameOver()
+    {
+        Time.timeScale = 0f;
+
+        deathScreen.enabled = true;
     }
 }
